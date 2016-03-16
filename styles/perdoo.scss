@@ -1,0 +1,997 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+//@import "bootstrap/print";
+//@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+//@import "bootstrap/type";
+//@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+//@import "bootstrap/buttons";
+
+// Components
+@import "bootstrap/component-animations";
+//@import "bootstrap/dropdowns";
+//@import "bootstrap/button-groups";
+//@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+//@import "bootstrap/breadcrumbs";
+//@import "bootstrap/pagination";
+//@import "bootstrap/pager";
+//@import "bootstrap/labels";
+//@import "bootstrap/badges";
+//@import "bootstrap/jumbotron";
+//@import "bootstrap/thumbnails";
+//@import "bootstrap/alerts";
+//@import "bootstrap/progress-bars";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/panels";
+//@import "bootstrap/responsive-embed";
+//@import "bootstrap/wells";
+//@import "bootstrap/close";
+
+// Components w/ JavaScript
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+@import "bootstrap/popovers";
+@import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+@import '../../bower_components/modular-scale/stylesheets/modular-scale';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import '_mappy-breakpoints';
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$wide-width: 1200px;
+$base-value: 1em;
+$perdoo-blue: #059DDF;
+$perdoo-green: #B0E93D;
+$perdoo-lightest-grey: #FAFAFA;
+$perdoo-light-grey: #EBEBEB;
+$perdoo-medium-grey: #767676;
+$perdoo-dark-grey: #2C2C2C;
+$perdoo-text-color: #5E5E5E;
+$link-color: $perdoo-blue;
+$white-rollover: mix(white, $perdoo-blue, 80%);
+$global-spacing: 6%;
+//$fa-font-path: "../bower_components/components-font-awesome/fonts";
+// bower:scss
+//$enable-flex: true;
+//@import "bower_components/bootstrap/scss/bootstrap.scss";
+//@import "bower_components/components-font-awesome/scss/font-awesome.scss";
+// endbower
+
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@function svg-fill ($svg, $color) {
+  @return str-replace($svg, '<svg', '<svg fill="#{$color}"');
+}
+
+@function svg-size ($svg, $width, $height) {
+  $svg: str-replace($svg, '<svg', '<svg width="#{$width}"');
+  $svg: str-replace($svg, '<svg', '<svg height="#{$height}"');
+  
+  @return $svg;
+}
+
+@function svg-arrow-fill($color:$perdoo-blue) {
+    @return ("data:image/svg+xml,<svg width='17' height='21' viewBox='0 0 17 21' xmlns='http://www.w3.org/2000/svg'><path d='M15.164 12.658l-5.868 5.056V.938C9.296.42 8.876 0 8.358 0S7.42.42 7.42.938v16.776l-5.87-5.056c-.392-.34-.985-.294-1.323.098-.338.393-.294.986.1 1.324L8.356 21l8.032-6.92c.392-.34.436-.93.097-1.324-.338-.392-.93-.437-1.323-.098z' fill='" +$color+"' fill-rule='evenodd'/></svg>")
+}
+
+@function svg-checkmark-fill($color:$perdoo-green) {
+    @return ("data:image/svg+xml,<svg width='23' height='22' viewBox='0 0 23 22' xmlns='http://www.w3.org/2000/svg'><path d='M22.685 2.17c-.364.567-.748 1.154-1.112 1.72-.95 1.396-1.882 2.812-2.813 4.228-1.132 1.7-2.245 3.38-3.378 5.078-1.012 1.518-2.023 3.035-3.015 4.552-.566.83-1.112 1.68-1.68 2.488-.707.992-2.224 1.72-3.398 1.133-.47-.23-1.04-.67-1.34-1.1-.04-.06-.08-.12-.14-.18-.13-.18-.25-.35-.37-.53l-.55-.79c-.225-.327-.448-.63-.69-.95-.244-.368-.507-.73-.75-1.076-.263-.384-.526-.748-.79-1.113-.24-.344-.505-.71-.747-1.07-.224-.326-.446-.65-.69-.97-.16-.246-.343-.49-.525-.75l-.425-.61c-.02-.02-.04-.06-.06-.1-.12-.2-.18-.423-.22-.665-.04-.365.1-.75.345-1.01.225-.22.53-.385.83-.466 0 0 .407-.14 1.075.283L7.97 15.07c.405-.444.79-.91 1.194-1.375.97-1.115 1.962-2.247 2.933-3.36 1.213-1.376 2.406-2.77 3.6-4.148 1.092-1.234 2.185-2.468 3.26-3.722.625-.746 1.252-1.495 1.98-2.183.57-.527 1.257-.264 1.74.222 0 0 .71.703 0 1.66z' fill='"+$color+"' fill-rule='evenodd'/></svg>")
+}
+
+@function svg-twitter-fill($color:$perdoo-blue) {
+    @return ("data:image/svg+xml,<svg width='37' height='37' viewBox='0 0 37 37' xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><path d='M26.67 13.654c-.535.238-1.113.4-1.72.47.62-.37 1.094-.956 1.318-1.655-.58.34-1.22.59-1.9.72-.547-.58-1.326-.948-2.187-.948-1.65 0-2.99 1.34-2.99 2.993 0 .235.03.463.08.682-2.49-.126-4.692-1.317-6.17-3.13-.26.443-.404.957-.404 1.507 0 1.04.528 1.957 1.33 2.494-.49-.016-.95-.15-1.354-.375v.04c0 1.45 1.03 2.66 2.4 2.933-.25.067-.514.103-.79.103-.19 0-.38-.02-.56-.055.38 1.19 1.486 2.054 2.796 2.08-1.023.8-2.314 1.28-3.72 1.28-.24 0-.48-.014-.71-.04 1.325.85 2.9 1.343 4.59 1.343 5.506 0 8.52-4.563 8.52-8.52 0-.13-.005-.26-.01-.388.584-.42 1.092-.95 1.493-1.55z' fill='"+$color+"'/></g></svg>")
+}
+
+@function svg-linkedin-fill($color:$perdoo-blue) {
+    @return ("data:image/svg+xml,<svg width='13' height='13' viewBox='0 0 13 13' xmlns='http://www.w3.org/2000/svg'><path d='M2.727 13V4.403H.082V13h2.645zm0-11.645C2.71.585 2.2 0 1.37 0 .543 0 0 .586 0 1.355 0 2.108.526 2.71 1.34 2.71h.016c.845 0 1.37-.602 1.37-1.355zM7.043 13V8.102c0-.263.02-.525.095-.712.21-.524.688-1.066 1.49-1.066 1.05 0 1.71.6 1.71 1.778V13H13V7.97c0-2.694-1.432-3.947-3.342-3.947-1.566 0-2.253.88-2.635 1.478l.02-1.15h-2.66c.04.825 0 8.65 0 8.65h2.66z' fill='"+$color+"' fill-rule='evenodd'/></svg>")
+}
+
+@function svg-googleplay-fill($color:$perdoo-blue) {
+    @return ("data:image/svg+xml,<svg width='17' height='18' viewBox='0 0 17 18' xmlns='http://www.w3.org/2000/svg'><path d='M12.418 5.422L2.776.285C2.276.018 1.73.005 1.26.175L9.477 8.35l2.942-2.928zm3.596 1.916l-2.778-1.48-3.132 3.118 3.132 3.117 2.778-1.48c1.313-.7 1.313-2.575 0-3.275zM.51.678C.214 1 .03 1.43.03 1.92v14.11c0 .493.185.923.48 1.245l8.338-8.3L.508.678zm.75 17.1c.47.17 1.015.156 1.516-.11l9.642-5.14L9.476 9.6 1.26 17.778z' fill='"+$color+"' fill-rule='evenodd'/></svg>")
+}
+
+@function svg-applestore-fill($color:$perdoo-blue) {
+    @return ("data:image/svg+xml,<svg width='19' height='23' viewBox='0 0 19 23' xmlns='http://www.w3.org/2000/svg'><g fill='"+$color+"' fill-rule='evenodd'><path d='M15.374 12.804c-.03-2.756 2.334-4.078 2.44-4.145C16.486 6.79 14.417 6.53 13.68 6.5c-1.76-.172-3.435.998-4.328.998-.89 0-2.27-.97-3.73-.947-1.92.028-3.688 1.075-4.676 2.73-1.993 3.328-.51 8.26 1.433 10.963.946 1.32 2.08 2.806 3.565 2.752 1.432-.056 1.972-.893 3.703-.893 1.73 0 2.217.892 3.73.864 1.54-.028 2.518-1.347 3.46-2.67 1.09-1.537 1.54-3.02 1.565-3.098-.033-.015-3.002-1.11-3.032-4.4z'/><path d='M12.256 4.487c.92-1.19 1.542-2.842 1.372-4.487-1.326.057-2.93.94-3.884 2.128-.853 1.054-1.6 2.733-1.4 4.348 1.48.123 2.99-.802 3.912-1.99z'/></g></svg>")
+}
+
+@function svg-paperplane-fill($color:$perdoo-blue) {
+    @return ("data:image/svg+xml,<svg width='61' height='40' viewBox='0 0 61 40' xmlns='http://www.w3.org/2000/svg'><path d='M1.513 13.793L59.487 1.38l-31.68 37.24L1.513 13.793zM59.487 1.38L14.083 25.7M13 25.7v12.92m1.083 0l4.104-4.433' stroke-width='2' stroke='"+$color+"' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+}
+
+@function svg-perdoo-fill($color:$perdoo-blue) {
+    @return ("data:image/svg+xml,<svg width='87' height='27' viewBox='0 0 87 27' xmlns='http://www.w3.org/2000/svg'><path d='M19.918 12.08l6.253-1.574c-.35-1.095-.84-1.85-1.46-2.263-.67-.445-1.5-.54-2.47-.295-.9.227-1.56.7-1.99 1.42-.43.724-.53 1.628-.31 2.71zM4.224 24.915c0 .572-.207 1.06-.62 1.47-.418.41-.91.614-1.492.614H0V11.7c0-2.87.847-4.823 2.54-5.867 1.694-1.045 3.536-1.57 5.52-1.57 1.033 0 2.076.194 3.13.583 1.052.394 1.894.955 2.513 1.695 1.24 1.6 1.858 3.65 1.858 6.15 0 2.59-.61 4.68-1.85 6.28-1.24 1.56-2.83 2.34-4.77 2.34-1.03 0-1.94-.18-2.72-.55-.83-.41-1.49-1.04-1.98-1.9v6.07zm27.605-3.6V13.39c0-1.597.23-2.938.7-4.022.47-1.09 1.11-1.96 1.93-2.613.78-.613 1.68-1.064 2.72-1.352 1.04-.288 2.11-.43 3.21-.43H41v4.37h-1.4c-1.185 0-2.063.287-2.632.858-.57.58-.857 1.48-.857 2.71v8.41h-4.29zM52.35 0h2.116c.583 0 1.076.213 1.495.64.42.425.62.903.62 1.432v11.874c0 2.882-.84 4.83-2.55 5.848-1.7 1.013-3.55 1.522-5.54 1.522-1.07 0-2.14-.172-3.17-.52-1.04-.342-1.86-.898-2.49-1.672-1.2-1.5-1.8-3.548-1.8-6.145 0-2.56.6-4.61 1.81-6.15 1.25-1.59 2.84-2.38 4.79-2.38 1.04 0 1.95.2 2.74.6.83.49 1.5 1.12 1.99 1.88V0zm6.597 19.54c-.85-.74-1.455-1.734-1.82-2.99-.365-1.248-.546-2.55-.546-3.905 0-1.108.15-2.216.46-3.324.3-1.1.78-2.02 1.43-2.76 1.05-1.23 2.41-1.96 4.07-2.18 1.66-.22 3.16-.09 4.49.4 1.53.62 2.67 1.69 3.4 3.21.69 1.35 1.03 2.93 1.03 4.74 0 1.32-.14 2.44-.42 3.38-.28.95-.64 1.75-1.09 2.41-.96 1.35-2.2 2.19-3.7 2.52-1.33.37-2.67.4-4.03.1-1.35-.31-2.43-.83-3.24-1.57zm14.852 0c-.85-.74-1.46-1.734-1.82-2.99-.37-1.248-.55-2.55-.55-3.905 0-1.108.15-2.216.45-3.324.3-1.1.77-2.02 1.42-2.76 1.05-1.23 2.4-1.96 4.06-2.18 1.66-.22 3.15-.09 4.49.4 1.53.62 2.66 1.69 3.39 3.21.69 1.35 1.03 2.93 1.03 4.74 0 1.32-.14 2.44-.43 3.38-.29.95-.65 1.75-1.09 2.41-.97 1.35-2.21 2.19-3.7 2.52-1.34.37-2.68.4-4.03.1-1.36-.31-2.44-.83-3.25-1.57zm2.99-10.887c-.82.942-1.19 2.344-1.11 4.203.07 1.858.4 3.156.99 3.894.23.33.64.602 1.22.827.58.225 1.17.246 1.77.063s1.14-.644 1.61-1.382c.46-.733.72-1.92.76-3.554 0-1.476-.23-2.58-.68-3.314-.45-.737-.96-1.21-1.54-1.413-.58-.204-1.17-.214-1.75-.03-.58.187-1.01.423-1.29.706zm-14.86 0c-.82.942-1.19 2.344-1.11 4.203.07 1.858.4 3.156.99 3.894.23.33.64.602 1.22.827.58.225 1.17.246 1.77.063s1.14-.644 1.61-1.382c.46-.733.71-1.92.75-3.554 0-1.476-.22-2.58-.67-3.314-.45-.737-.96-1.21-1.54-1.413-.59-.204-1.17-.214-1.75-.03-.59.187-1.02.423-1.29.706zm-17.38 3.982c0 1.668.31 2.937.93 3.817.62.874 1.51 1.31 2.67 1.31 1.11 0 1.98-.436 2.6-1.31.57-.88.86-2.15.86-3.817 0-1.503-.32-2.692-.93-3.566-.66-.84-1.55-1.26-2.67-1.26-1.08 0-1.93.43-2.55 1.31-.62.84-.93 2-.93 3.51zm-33.25.25c0-1.63-.31-2.878-.93-3.758-.62-.874-1.52-1.31-2.67-1.31-1.12 0-1.99.436-2.6 1.31-.58.794-.87 2.047-.87 3.758 0 1.584.3 2.772.93 3.567.62.874 1.51 1.31 2.67 1.31 1.07 0 1.92-.436 2.54-1.31.62-.88.93-2.07.93-3.567zm19.81 2.375c-.2 1.264-.69 2.35-1.47 3.26-1.01 1.218-2.46 2.06-4.34 2.52-2.28.56-4.25.265-5.9-.888-1.64-1.11-2.8-2.995-3.46-5.656-.64-2.54-.52-4.67.37-6.404.92-1.784 2.52-2.96 4.8-3.52 2.4-.59 4.43-.336 6.11.766 1.64 1.148 2.79 3.03 3.45 5.646l.1.412.06.24c.05.197.06.34.04.43L20.52 14.62c.116.405.25.77.406 1.09l-.01.005.027.063v.002c.028.06.056.12.087.18l.003.005.004.008.022.045v.017l.02.04.01.017.02.048v.006l.07.11v.005l.03.06.03.05v.02l.03.04.01.01v.01l.03.05v.01l.04.05v.01l.04.05.04.05v.01l.04.05v.01l.03.04.01.01v.01l.03.03.03.03.023.02.02.02.026.03.02.02h.002l.02.03.02.02.02.02.02.02h.007l.03.02h.005l.02.01.01.006.03.02.01.01h.002l.04.03.03.02.02.02.02.02.01.01.03.02.02.016h.01l.025.02.026.014.03.02.02.02h.003l.03.02.017.005.03.02.016.01.03.013.03.02h.006c.1.057.2.1.3.14v.007h.01l.04.02.01.01h.01l.04.02h.01l.04.02h.02l.06.02h.01l.06.02.064.02.127.03.01.005h.003l.055.01h.01l.06.01h.01l.058.01h.006l.006.006h.01l.055.01h.01l.06.01.07.01h.01l.06.007h.007l.138.01h.37l.06-.005h.01l.065-.01.07-.01.07-.01.07-.01.027-.01.06-.01h.02l.07-.01.02-.005.05-.015h.017l.07-.02.01-.006.016-.01.05-.01.03-.01.06-.02H25l.07-.02.02-.01.05-.02.02-.01.06-.02.026-.01.036-.012.03-.01h.005l.056-.02h.006l.07-.03.01-.01.05-.02.01-.01.06-.03.02-.01.04-.02.02-.01.05-.03.01-.02.05-.03h.01l.06-.04.01-.008.05-.03.02-.017.03-.03.03-.02.04-.035.02-.02.04-.035.02-.01h.005l.04-.04.03-.028.02-.02.026-.02.038-.037.03-.03.03-.035.02-.016.01-.007.03-.03.02-.03h.005l.02-.02v-.02l.003-.002.01-.02.005-.003.017-.02.01-.02v-.01l.03-.03.01-.017.01-.02.01-.02h.01l.012-.028V16.5l.014-.02.01-.004.01-.02v-.01l.01-.01.03-.04v-.02l.01-.01.01-.02v-.006l.02-.02v-.006l.014-.02.01-.01.02-.03.006-.004.02-.02.01-.02.01-.02.02-.02.01-.02v-.005l.02-.025.01-.024.014-.026V16l.01-.02.01-.03.005-.01.01-.02.01-.003v-.01l.02-.04.01-.02.003-.01.005-.014.01-.01.01-.025.01-.03.01-.03.01-.026.01-.03.01-.026.01-.02v-.02l.01-.02v-.002l4.04-.3z' fill='"+$color+"' fill-rule='evenodd'/></svg>")
+}
+
+@mixin svg-arrow($color:$perdoo-blue) {
+    &:after {
+        content: url(svg-arrow-fill($color));
+    }
+}
+
+@mixin svg-checkmark($color:$perdoo-green) {
+    &:after {
+        content: url(svg-checkmark-fill($color));
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contaniner, .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+hr.arrow {
+    margin-top: $global-spacing;
+//    width: 400px;
+//    @include svg-arrow($perdoo-blue);
+//    &:after {
+//        display: block;
+//        width: 40px;
+//        margin-top: -10px;
+//        margin-left: auto;
+//        margin-right: auto;
+//        background-color: white;
+//        padding-left: 10px;
+//    }
+}
+
+* {
+    transition: all .3s ease;
+    font-family: 'Open Sans', 'open sans', Helvetica, Arial, sans-serif;
+    color: $perdoo-text-color;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@mixin fixwidth($width) {
+    width: $width;
+    min-width: $width;
+    max-width: $width;
+}
+
+@mixin fixheight($height) {
+    height: $height;
+    min-height: $height;
+    max-height: $height;
+}
+
+@mixin media-range($min:mobile, $max:null, $orientation:landscape) {
+    @if ($min==mobile) or ($min==null) {
+        $min-px: 1px;
+    }
+    @if ($min==tablet) {
+        $min-px: $tablet-width;
+    }
+    @if ($min==desktop) {
+        $min-px: $desktop-width;
+    }
+    @if ($min==wide) {
+        $min-px: $hd-width;
+    }
+    @if ($max==mobile) {
+        $max-px: $tablet-width - 1px;
+    }
+    @if ($max==tablet) {
+        $max-px: $desktop-width - 1px;
+    }
+    @if ($max==desktop) {
+        $max-px: $wide-width - 1px;
+    }
+    
+    @if ($max==null) {
+        @include mappy-bp($min-px) {
+            @content;
+        }
+    } 
+    @else {
+        @include mappy-bp($min-px $max-px) {
+            @content;
+        }
+    }
+}
+
+@mixin create-flexbox($halign:space-between, $valign:center, $inline:false, $column:false) {
+    @if $inline {
+        display: inline-flex;
+    }
+    @else {
+        display: flex;
+    }
+    //
+    @if ($column) {
+        flex-direction: column;
+    }
+    @else {
+        flex-direction: row;
+    }
+    //
+    justify-content: $halign;
+    align-items: $valign;
+    align-content: $valign;
+    // bootstrap before:after hack
+    &:before,
+    &:after {
+        content: none;
+    }
+}
+
+@mixin font-weight($weight:light) {
+    @if ($weight == null) or ($weight == light) {
+        font-weight: lighter;
+        font-weight: 300;
+    }
+    @if ($weight == normal) {
+        font-weight: normal;
+        font-weight: 400;
+    }
+    @if ($weight == semibold) {
+        font-weight: bold;
+        font-weight: 600;
+    }
+    @if ($weight == bold) {
+        font-weight: bolder;
+        font-weight: 700;
+    }
+}
+
+$ms-base: 11px;
+$ms-ratio: $major-third; 
+//$ms-range:
+//  1.1   20em,
+//  1.333 60em;
+//$base-size: 14px 30px;
+//$ratio: $golden;
+
+@mixin font-size-calculate($multiply) {
+    font-size: ms($multiply);
+    line-height: ms($multiply) * $ms-ratio;
+    letter-spacing: -(ms($multiply) / 100);
+    font-kerning: normal;
+}
+
+@mixin line-height-calculate($font-size, $multiply:1) {
+    line-height: (ms($font-size) * $ms-ratio) * $multiply  !important;
+}
+
+@mixin font-size-media($multiply) {
+    
+    @include media-range(mobile, tablet, landscape) {
+        @include font-size-calculate($multiply);
+    }
+    
+    @include media-range(mobile, tablet, portrait) {
+        @include font-size-calculate($multiply);
+    }
+    
+    @include media-range(desktop) {
+        @include font-size-calculate($multiply);
+    }
+}
+
+html, body {
+    @include font-weight(normal);
+    @include font-size-media(1);
+}
+
+h1 {
+    @include font-weight(light);
+    @include font-size-media(7);
+}
+
+h2 {
+    @include font-weight(light);
+    @include font-size-media(6);
+}
+
+h3 {
+    @include font-weight(light);
+    @include font-size-media(5);
+}
+
+h4 {
+    @include font-weight(light);
+    @include font-size-media(4);
+}
+
+h5 {
+    @include font-weight(light);
+    @include font-size-media(3);
+}
+
+h6 {
+    @include font-weight(light);
+    @include font-size-media(2);
+}
+
+
+@mixin button-maker($size:20px) {
+    padding-top: $size;
+    padding-bottom: $size;
+    padding-left: $size * 2;
+    padding-right: $size * 2;
+    border-radius: $size * 2;
+}
+
+@mixin icon-button ($icon-svg, $icon-color, $icon-color-hover) {
+//    $icon-svg: svg-size($circle-icon-svg, 20, 20);
+    background: url('#{svg-fill($icon-svg, $icon-color)}');
+    
+    &:hover {
+        background: url('#{svg-fill($icon-svg, $icon-color-hover)}');
+    }
+}
+
+@mixin button-outline-rollover($color:$perdoo-blue) {
+    &:hover {
+        color: $color !important;
+        border-color: $color !important;
+        fill: currentColor !important;
+        svg {
+            fill: currentColor !important;
+        }
+    }
+}
+
+.button-zoom-hover {
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.button {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.button-outline-blue {
+    background: none;
+    border: 1px solid $perdoo-blue;
+}
+
+.button-outline-white {
+    background: none;
+    border: 1px solid white !important;
+}
+.button-outline-grey {
+    background: none;
+    border: 1px solid $perdoo-medium-grey !important;
+}
+
+.button-fill-white {
+    background-color: white;
+    border: 1px solid transparent;
+    color: $perdoo-blue;
+}
+
+.button-fill-blue {
+    background-color: $perdoo-blue;
+    border: 1px solid transparent;
+    color: white;
+}
+    
+.button-big {
+    @include button-maker(30px);
+}
+.button-medium {
+    @include button-maker(20px);
+}
+.button-small {
+    @include button-maker(10px);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+header {
+    @extend .navbar;
+    @extend .navbar-default;
+    @extend .navbar-fixed-top;
+    border: none;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    
+    button {
+        background: none !important;
+        border: 0 !important;
+        * {
+            background-color: $perdoo-blue !important;
+        }
+        
+    }
+    
+    nav {
+        @extend .container;
+        padding: 1em;
+        #header-branding {
+            @extend .navbar-header;
+            a {
+                @extend .navbar-brand;
+                svg {
+                    color: $perdoo-blue;
+                    fill: currentColor;
+                }
+            }
+        }
+        #header-navigation {
+            @extend .collapse;
+            @extend .navbar-collapse;
+            ul {
+                @extend .nav;
+                @extend .navbar-nav;
+                @extend .navbar-right;
+                li {
+                    a {
+                        color: $perdoo-blue;
+                        
+                        &:hover {
+                            color: darken($perdoo-blue, 20%);
+                        }
+                    }
+                    .button {
+                        @extend .button-outline-blue;
+                        @include font-weight(bold);
+                        @include button-maker(15px);
+                        &:hover {
+                            @extend .button-fill-blue;
+                        }
+                        margin-left: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-noshadow {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.header-bright {
+    @include media-range(tablet) {
+        background-color: transparent;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        nav {
+            #header-branding svg {
+                color: white;
+                fill: currentColor;
+            }
+            #header-navigation {
+                a {
+                    color: $white-rollover;
+                    &:hover {
+                        color: white;
+                    }
+                }
+                a.button {
+                    color: white;
+                }
+                .button {
+                    @extend .button-outline-white;
+                    &:hover {
+                        @extend .button-fill-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#main-hero {
+    @extend .container-fluid;
+    background: none;
+    background-image: url(../images/main-bg-charts.svg), linear-gradient(to bottom, rgba(5,157,223,1) 85%,rgba(255,255,255,1) 98%); ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-top: 5%;
+    @include media-range(mobile, tablet) {
+        padding-top: 80px;
+    }
+    
+    div {
+        @extend .center-block;
+        height: 100%;
+        margin-top: 1em;
+
+        * {
+            color: white;
+        }
+        h5 {
+            opacity: .6;
+            margin-top: .5em;
+            margin-bottom: 1em;
+        }
+        img {
+            @extend .img-responsive;
+            @extend .center-block;
+            max-width: 50vw;
+        }
+        * {
+            text-align: center;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#customer_quotes {
+    margin-top: $global-spacing;
+    @extend .container;
+    * {
+        text-align: center;
+    }
+    
+    #customer_quotes__customers {
+    margin-top: $global-spacing / 2;
+        @extend .col-md-6;
+        @extend .col-md-offset-3;
+        @include create-flexbox(space-around, baseline);
+        
+        .customer_quotes__customer-column {
+            @include create-flexbox(center, center, false, column);
+            
+            .customer_quotes__face {
+                border-radius: 50%;
+                border: 3px solid #ECECEC;
+                @include fixwidth(120px);
+                @include fixheight(120px);
+                
+            }
+        }
+        
+        .customer_quotes__customer-column:first-child, 
+        .customer_quotes__customer-column:last-child,  {
+            transform: scale(.7);
+            .customer_quotes__logo {
+                display: none;
+            }
+        }   
+    }
+    #customer_quotes__quotes {
+    margin-top: $global-spacing / 2;
+        @extend .col-md-10;
+        @extend .col-md-offset-1; 
+        
+        h5 {
+            margin-bottom: 2em;
+        }
+        span {
+            color: lighten(#000, 70%);
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#need_perdoo {
+    margin-top: $global-spacing;
+    @extend .container;
+    @include create-flexbox(space-between, space-between, false, column);
+    * {
+        text-align: center;
+        margin-bottom: 1em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    #need_perdoo__icons {
+        margin-top: $global-spacing / 2;
+        @extend .col-sm-10;
+        @extend .col-sm-offset-1; 
+        @include create-flexbox(space-between, flex-start);
+        
+        hr {
+            width: 1px;
+            height: 160px;
+            background-color: $perdoo-light-grey;
+            margin-top: 0;
+        }
+        
+        .need_perdoo__icon_column {
+            @include create-flexbox(space-between, space-between, false, column);
+            height: 200px;
+            
+            p {
+                text-transform: uppercase;
+                @include font-weight(semibold);
+            }
+            
+            @include media-range(mobile, mobile) {
+                img {
+                    transform: scale(.7);
+                }
+            }
+        }
+    }
+    
+    #need_perdoo__text {
+    margin-top: $global-spacing / 2;
+        @extend .col-md-10;
+        @extend .col-md-offset-1;
+        
+        h4 {
+            strong {
+                color: $perdoo-blue;
+                @include font-weight(semibold);
+            }  
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#what_is {
+    margin-top: $global-spacing;
+    padding-bottom: $global-spacing;
+    @extend .container-fluid;
+    
+    #what_is__container {
+        @extend .container;
+        @include media-range(desktop) {
+            @include create-flexbox();
+        }
+        
+        .image-overflow {
+            position: absolute;
+            overflow: hidden;
+            right: 50vw;
+            width: 50vw;
+            
+            img {
+                max-width: 50vw;
+            }
+        }
+        
+        #what_is__text {
+            @extend .col-md-5;
+            @extend .col-md-offset-7; 
+            
+            h6 {
+                text-transform: uppercase;
+                color: $perdoo-blue;
+                @include font-size-media(1);
+                @include font-weight(semibold);
+                
+                margin-top: 2em;
+                background: url(svg-checkmark-fill());
+                background-repeat: no-repeat;
+                padding-left: 30px;
+                height: 30px;
+                padding-top: 2px;
+            }
+        }
+        
+         
+        @include media-range(mobile, tablet) {
+           position: inherit;
+            overflow: none;
+            width: 100%;
+            
+            img {
+                display: none;
+            }
+                
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#ready {
+    margin-top: $global-spacing;
+    @extend .container-fluid;
+    @include create-flexbox(center, center, false, column);
+    background-color: $perdoo-blue;
+    background-image: url(../images/chart-bg.svg);
+    background-size: cover;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    
+    * {
+        text-align: center;
+        color: white;
+    }
+    
+    #ready__container {
+        @extend .container;
+        
+        * {
+            display: inline-block;
+        }
+        
+        h5 {
+            opacity: .6;
+            margin-top: .5em;
+//            margin-bottom: 1.5em;
+        }
+        
+        .button {
+            margin: 2em;
+            @extend .button-fill-white;
+            @extend .button-medium;
+            @extend .button-zoom-hover;
+            @include font-size-media(3);
+            @include font-weight(semibold);
+        }
+        
+        .arrow {
+            @include svg-arrow(white);
+            display: block;
+        }
+    }
+    a {
+        color: mix(white, $perdoo-blue, 50%);
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#about_perdoo {
+    margin-top: $global-spacing * 1.5;
+    @extend .container-fluid;
+    
+    #about__container {
+        @extend .container;
+        
+        text-align: center;
+        
+        .article__col1, .article__col2 {
+            @extend .col-md-6;
+            @include create-flexbox(baseline, flex-start, false, column);
+            @include font-size-media(2);
+            @include line-height-calculate(4);
+            text-align: left;
+            margin-top: -$global-spacing;
+            padding: $global-spacing / 2;
+            
+            img {
+                border-radius: 50%;
+                margin-bottom: 2em;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                transform: scale(.7);
+            }
+        }
+    }
+    #about__quote {
+        background-color: $perdoo-lightest-grey;
+        padding: $global-spacing / 2;
+//        @extend .spacer-arrow;
+        div {
+            @extend .container;
+            text-align: center;
+            
+            h1 {
+                color: $perdoo-blue;
+            }
+            
+            * {
+                padding: .5em;
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#get-to-know {
+    @extend .container-fluid;
+    background-color: $perdoo-blue;
+    
+    &:hover {
+        background-color: darken($perdoo-blue, 5%);
+    }
+    
+    div {
+        @include create-flexbox(center, center);
+        padding: $global-spacing / 2;
+    }
+    
+    * {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    
+    h3 {
+        text-align: center;
+        padding-right: 70px;
+        background-image: url(svg-paperplane-fill(white));
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    @extend .container-fluid; 
+    
+    section#footer-row1 {
+        padding-top: $global-spacing;
+        padding-bottom: $global-spacing ;
+        background-color: lighten($perdoo-dark-grey, 5%);
+
+        #footer-row1__container {
+            @extend .container;
+            * a {
+                display: block;
+                color: $perdoo-medium-grey;
+                fill: currentColor;
+                padding: .5em;
+                padding-left: 0;
+                
+                &:hover {
+                    color: $perdoo-blue;
+                }
+            }
+            
+            .button {
+                @extend .button-outline-grey;
+                @include button-maker(10px);
+                @include button-outline-rollover();
+                margin: .5em;
+                text-align: left;
+                display: block;
+            }
+
+            #footer-row1__column1 {
+                @extend .col-sm-2;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            #footer-row1__column2 {
+                @extend .col-sm-2;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            #footer-row1__column3 {
+                @extend .col-sm-2;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            #footer-row1__column4 {
+                @extend .col-sm-3;
+                @extend .col-sm-offset-2; 
+                padding-left: 0;
+                padding-right: 0;
+            
+                .apple_store {
+                    padding-left: 40px;
+                    background-image: url(svg-applestore-fill($perdoo-medium-grey));
+                    background-repeat: no-repeat;
+                    background-position: left 15px top 7px;
+                    min-width: 70%;
+                    float: right;
+                    &:hover {
+                        background-image: url(svg-applestore-fill());
+                    }
+                }
+
+                .google_play {
+                    padding-left: 40px;
+                    background-image: url(svg-googleplay-fill($perdoo-medium-grey));
+                    background-repeat: no-repeat;
+                    background-position: left 15px top 11px;
+                    min-width: 70%;
+                    float: right;
+                    &:hover {
+                        background-image: url(svg-googleplay-fill());
+                    }
+                }
+            }
+            
+            #footer-row1__column5 {
+                @extend .col-sm-1;
+                padding-left: 0;
+                padding-right: 0;
+                
+                .linkedin {
+                    background-image: url(svg-linkedin-fill($perdoo-medium-grey));
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    @include fixwidth(40px);
+                    @include fixheight(40px);
+                    padding: 0;
+                    float: right;
+                    &:hover {
+                        background-image: url(svg-linkedin-fill());
+                    }
+                }
+                .twitter {
+//                    @include icon-button(svg-twitter-fill($perdoo-medium-grey), $perdoo-medium-grey, $perdoo-blue);
+                    background-image: url(svg-twitter-fill($perdoo-medium-grey));
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    @include fixwidth(40px);
+                    @include fixheight(40px);
+                    padding: 0;
+                    float: right;
+                    &:hover {
+                        background-image: url(svg-twitter-fill());
+                    }
+                }
+            }
+        }
+    }
+       
+    
+    section#footer-row2 {
+        background-color: $perdoo-dark-grey;
+        padding-top: $global-spacing / 2;
+        padding-bottom: $global-spacing / 2;
+        
+        #footer-row2__container {
+            @extend .container;
+            
+            svg {
+                margin-top: 1em;
+                color: $perdoo-medium-grey;
+                fill: currentColor;
+            }
+        
+            #footer-row2__column1 {
+                @extend .col-sm-8;    
+                padding-left: 0;
+                padding-right: 0;
+            }
+            #footer-row2__column2 {
+                @extend .col-sm-4;    
+                padding-left: 0;
+                padding-right: 0;
+                
+                address {
+                    text-align: right;
+                    font-style: normal;
+                    
+                    span {
+                        color: $perdoo-blue;
+                    }
+                }
+            }
+        }
+    }
+}
