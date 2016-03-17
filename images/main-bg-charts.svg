@@ -1,140 +1,126 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1507px" height="576px" viewBox="0 0 1507 576" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1500px" height="504px" viewBox="0 0 1500 504" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
     <title>main-bg-charts</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="1507" height="580"></rect>
-        <path id="path-3" d="M1726.41769,639.840854 C1727.23657,604.997854 1732.40426,401.359854 1725.30591,339.679854 C1708.00395,189.335854 1653.75899,-0.799146422 1605.04149,1.01285358 C1548.20002,3.12685358 1531.49195,265.324854 1449.64209,269.679854 C1413.91119,271.579854 1392.50266,222.920854 1352.34898,232.345854 C1310.93758,242.066854 1309.73662,299.451854 1273.29832,304.345854 C1233.54902,309.684854 1213.58569,244.266854 1172.62731,248.345854 C1133.50535,252.241854 1134.76914,313.612854 1086.81985,329.679854 C1040.93095,345.055854 1014.19156,297.415854 940.880183,294.345854 C883.429613,291.940854 881.306393,320.421854 817.236851,330.345854 C695.019471,349.277854 633.578869,256.351854 561.167456,293.679854 C517.388595,316.246854 519.570596,360.665854 475.359996,367.012854 C437.869717,372.394854 424.905409,342.090854 378.742867,345.679854 C333.70629,349.180854 326.624162,379.533854 292.259423,375.679854 C252.581062,371.228854 246.95225,329.070854 208.479918,319.012854 C162.653848,307.031854 113.674872,351.951854 93.6193159,370.345854 C-1.60023855,457.675854 -1.29113022,597.148854 0.380081709,639.678854 L1726.41769,639.840854 Z"></path>
-        <linearGradient x1="50%" y1="49.5517937%" x2="50%" y2="98.7683355%" id="linearGradient-5">
+        <path id="path-1" d="M1500,2.27373675e-13 C1438.52623,15.8094289 1444.17587,42.9303854 1383.60032,58.2804087 C1323.98879,73.3847034 1313.52194,22.2838428 1255.01745,37.5323695 C1197.43692,52.5378386 1210.22084,115.989231 1153.33543,130.294908 C1097.33108,144.378895 1075.9254,36.3731717 1021.10247,51.0260737 C967.117684,65.4572858 978.445563,123.548056 925.10155,137.34625 C872.555638,150.936109 876.019795,168.983805 824.20619,182.245135 C773.15922,195.311485 758.670404,118.654852 708.584587,132.060415 C659.225356,145.273668 678.694433,249.871243 629.767149,262.176368 C581.532124,274.30521 575.99405,244.099292 528.52852,256.260186 C481.729504,268.250138 470.310086,205.015093 424.329195,217.258787 C378.989073,229.331539 376.7378,216.689872 332.05847,228.679824 C287.988443,240.501505 291.489788,260.46161 247.974713,271.994828 C205.046055,283.373129 213.86521,334.361809 171.397105,345.259338 C129.495394,356.009963 125.79667,334.311061 84.4985411,345.056345 C43.7496424,355.660067 40.1682018,334.361809 0,344.962861 L0,504 L1500,504 L1500,2.27373675e-13 Z"></path>
+        <linearGradient x1="50%" y1="50.3296301%" x2="50%" y2="98.7683355%" id="linearGradient-3">
+            <stop stop-color="#F6F6F6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="49.5517937%" x2="50%" y2="98.7683355%" id="linearGradient-4">
             <stop stop-color="#F6F6F6" offset="1.58043686%"></stop>
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
-        <circle id="path-6" cx="197" cy="317" r="5"></circle>
-        <circle id="path-7" cx="285" cy="374" r="5"></circle>
-        <circle id="path-8" cx="375" cy="346" r="5"></circle>
-        <circle id="path-9" cx="463" cy="368" r="5"></circle>
-        <circle id="path-10" cx="551" cy="300" r="5"></circle>
-        <circle id="path-11" cx="640" cy="294" r="5"></circle>
-        <circle id="path-12" cx="729" cy="326" r="5"></circle>
-        <circle id="path-13" cx="818" cy="332" r="5"></circle>
-        <circle id="path-14" cx="907" cy="298" r="5"></circle>
-        <circle id="path-15" cx="996" cy="306" r="5"></circle>
-        <circle id="path-16" cx="1084" cy="331" r="5"></circle>
-        <circle id="path-17" cx="1173" cy="249" r="5"></circle>
-        <circle id="path-18" cx="1262" cy="304" r="5"></circle>
-        <circle id="path-19" cx="1351" cy="233" r="5"></circle>
-        <circle id="path-20" cx="1440" cy="270" r="5"></circle>
-        <circle id="path-21" cx="1528" cy="161" r="5"></circle>
-        <circle id="path-22" cx="1617" cy="5" r="5"></circle>
-        <rect id="path-23" x="111" y="561" width="1590" height="5"></rect>
+        <circle id="path-5" cx="87" cy="345" r="5"></circle>
+        <circle id="path-6" cx="175" cy="343" r="5"></circle>
+        <circle id="path-7" cx="263" cy="267" r="5"></circle>
+        <circle id="path-8" cx="351" cy="222" r="5"></circle>
+        <circle id="path-9" cx="439" cy="217" r="5"></circle>
+        <circle id="path-10" cx="527" cy="257" r="5"></circle>
+        <circle id="path-11" cx="615" cy="264" r="5"></circle>
+        <circle id="path-12" cx="703" cy="135" r="5"></circle>
+        <circle id="path-13" cx="791" cy="176" r="5"></circle>
+        <circle id="path-14" cx="879" cy="156" r="5"></circle>
+        <circle id="path-15" cx="967" cy="104" r="5"></circle>
+        <circle id="path-16" cx="1055" cy="58" r="5"></circle>
+        <circle id="path-17" cx="1143" cy="130" r="5"></circle>
+        <circle id="path-18" cx="1231" cy="49" r="5"></circle>
+        <circle id="path-19" cx="1319" cy="47" r="5"></circle>
+        <circle id="path-20" cx="1407" cy="50" r="5"></circle>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="main-bg-charts" transform="translate(0.000000, -4.000000)">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <use id="Mask" xlink:href="#path-1"></use>
-            <g id="Group-16" mask="url(#mask-2)">
-                <g transform="translate(-110.000000, 14.000000)">
-                    <mask id="mask-4" fill="white">
-                        <use xlink:href="#path-3"></use>
-                    </mask>
-                    <use id="Mask" stroke="none" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
-                    <g id="Group-16" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-4)">
-                        <g transform="translate(107.000000, 1.000000)" id="Rectangle-1384">
-                            <rect fill="#FFFFFF" x="0" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="88.8333333" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="177.666667" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="266.5" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="355.333333" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="444.166667" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="533" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="621.833333" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="710.666667" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="799.5" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="888.333333" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="977.166667" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="1066" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="1154.83333" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="1243.66667" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="url(#linearGradient-5)" x="1332.5" y="0" width="88.8333333" height="561"></rect>
-                            <rect fill="#FFFFFF" x="1421.33333" y="0" width="88.8333333" height="561"></rect>
-                        </g>
+        <g id="main-bg-charts">
+            <g id="Group-16">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)" id="Rectangle-1384">
+                    <g transform="translate(86.000000, -57.000000)">
+                        <rect fill="url(#linearGradient-3)" x="0" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="88" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="176" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="264" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="352" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="440" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="528" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="616" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="704" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="792" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="880" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="968" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="1056" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="1144" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="1232" y="0" width="2" height="561"></rect>
+                        <rect fill="url(#linearGradient-4)" x="1320" y="0" width="2" height="561"></rect>
                     </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-6"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-7"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-8"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-9"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-10"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-11"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-12"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-12"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-13"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-14"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-14"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-15"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-16"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-16"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-17"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-17"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-18"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-18"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-19"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-19"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-20"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-20"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-21"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-21"></use>
-                    </g>
-                    <g id="Oval-15">
-                        <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-22"></use>
-                        <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-22"></use>
-                    </g>
-                    <mask id="mask-24" fill="white">
-                        <use xlink:href="#path-23"></use>
-                    </mask>
-                    <use id="Mask" stroke="none" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-23"></use>
                 </g>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-5"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-6"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-7"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-8"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-9"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-10"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-11"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-12"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-12"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-13"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-14"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-14"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-15"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-16"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-16"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-17"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-17"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-18"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-18"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-19"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-19"></use>
+            </g>
+            <g id="Oval-15">
+                <use stroke-opacity="0.113564312" stroke="#52C8FC" stroke-width="10" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-20"></use>
+                <use stroke="#059DDF" stroke-width="2" fill="none" xlink:href="#path-20"></use>
             </g>
         </g>
     </g>

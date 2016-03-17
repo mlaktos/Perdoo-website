@@ -50,8 +50,20 @@
 @import "bootstrap/responsive-utilities";
 
 @import '../../bower_components/modular-scale/stylesheets/modular-scale';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import '_mappy-breakpoints';
+
+//$fa-font-path: "../bower_components/components-font-awesome/fonts";
+// bower:scss
+//$enable-flex: true;
+//@import "bower_components/bootstrap/scss/bootstrap.scss";
+//@import "bower_components/components-font-awesome/scss/font-awesome.scss";
+// endbower
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+// BASIC VARIABLES, PROJECT SETUP
+
 $mobile-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 992px;
@@ -67,12 +79,18 @@ $perdoo-text-color: #5E5E5E;
 $link-color: $perdoo-blue;
 $white-rollover: mix(white, $perdoo-blue, 80%);
 $global-spacing: 6%;
-//$fa-font-path: "../bower_components/components-font-awesome/fonts";
-// bower:scss
-//$enable-flex: true;
-//@import "bower_components/bootstrap/scss/bootstrap.scss";
-//@import "bower_components/components-font-awesome/scss/font-awesome.scss";
-// endbower
+$line-height: 2px;
+$ms-base: 12px;
+$ms-ratio: $major-second; 
+//$ms-range:
+//  1.1   20em,
+//  1.333 60em;
+//$base-size: 14px 30px;
+//$ratio: $golden;
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+// FUNCTIONs
 
 @function str-replace($string, $search, $replace: '') {
     $index: str-index($string, $search);
@@ -95,6 +113,9 @@ $global-spacing: 6%;
   @return $svg;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------- */
+// SVGs
+
 @function svg-arrow-fill($color:$perdoo-blue) {
     @return ("data:image/svg+xml,<svg width='17' height='21' viewBox='0 0 17 21' xmlns='http://www.w3.org/2000/svg'><path d='M15.164 12.658l-5.868 5.056V.938C9.296.42 8.876 0 8.358 0S7.42.42 7.42.938v16.776l-5.87-5.056c-.392-.34-.985-.294-1.323.098-.338.393-.294.986.1 1.324L8.356 21l8.032-6.92c.392-.34.436-.93.097-1.324-.338-.392-.93-.437-1.323-.098z' fill='" +$color+"' fill-rule='evenodd'/></svg>")
 }
@@ -116,7 +137,7 @@ $global-spacing: 6%;
 }
 
 @function svg-applestore-fill($color:$perdoo-blue) {
-    @return ("data:image/svg+xml,<svg width='19' height='23' viewBox='0 0 19 23' xmlns='http://www.w3.org/2000/svg'><g fill='"+$color+"' fill-rule='evenodd'><path d='M15.374 12.804c-.03-2.756 2.334-4.078 2.44-4.145C16.486 6.79 14.417 6.53 13.68 6.5c-1.76-.172-3.435.998-4.328.998-.89 0-2.27-.97-3.73-.947-1.92.028-3.688 1.075-4.676 2.73-1.993 3.328-.51 8.26 1.433 10.963.946 1.32 2.08 2.806 3.565 2.752 1.432-.056 1.972-.893 3.703-.893 1.73 0 2.217.892 3.73.864 1.54-.028 2.518-1.347 3.46-2.67 1.09-1.537 1.54-3.02 1.565-3.098-.033-.015-3.002-1.11-3.032-4.4z'/><path d='M12.256 4.487c.92-1.19 1.542-2.842 1.372-4.487-1.326.057-2.93.94-3.884 2.128-.853 1.054-1.6 2.733-1.4 4.348 1.48.123 2.99-.802 3.912-1.99z'/></g></svg>")
+    @return ("data:image/svg+xml,<svg width='14' height='17' viewBox='0 0 19 23' xmlns='http://www.w3.org/2000/svg'><g fill='"+$color+"' fill-rule='evenodd'><path d='M15.374 12.804c-.03-2.756 2.334-4.078 2.44-4.145C16.486 6.79 14.417 6.53 13.68 6.5c-1.76-.172-3.435.998-4.328.998-.89 0-2.27-.97-3.73-.947-1.92.028-3.688 1.075-4.676 2.73-1.993 3.328-.51 8.26 1.433 10.963.946 1.32 2.08 2.806 3.565 2.752 1.432-.056 1.972-.893 3.703-.893 1.73 0 2.217.892 3.73.864 1.54-.028 2.518-1.347 3.46-2.67 1.09-1.537 1.54-3.02 1.565-3.098-.033-.015-3.002-1.11-3.032-4.4z'/><path d='M12.256 4.487c.92-1.19 1.542-2.842 1.372-4.487-1.326.057-2.93.94-3.884 2.128-.853 1.054-1.6 2.733-1.4 4.348 1.48.123 2.99-.802 3.912-1.99z'/></g></svg>")
 }
 
 @function svg-paperplane-fill($color:$perdoo-blue) {
@@ -139,42 +160,8 @@ $global-spacing: 6%;
     }
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.contaniner, .container-fluid {
-    padding: 0;
-    margin: 0;
-}
-
-hr.arrow {
-    margin-top: $global-spacing;
-//    width: 400px;
-//    @include svg-arrow($perdoo-blue);
-//    &:after {
-//        display: block;
-//        width: 40px;
-//        margin-top: -10px;
-//        margin-left: auto;
-//        margin-right: auto;
-//        background-color: white;
-//        padding-left: 10px;
-//    }
-}
-
-* {
-    transition: all .3s ease;
-    font-family: 'Open Sans', 'open sans', Helvetica, Arial, sans-serif;
-    color: $perdoo-text-color;
-}
-
-a:hover {
-    text-decoration: none;
-}
+/* ---------------------------------------------------------------------------------------------------------------- */
+// MIXINs
 
 @mixin fixwidth($width) {
     width: $width;
@@ -230,14 +217,12 @@ a:hover {
     @else {
         display: flex;
     }
-    //
     @if ($column) {
         flex-direction: column;
     }
     @else {
         flex-direction: row;
     }
-    //
     justify-content: $halign;
     align-items: $valign;
     align-content: $valign;
@@ -267,18 +252,15 @@ a:hover {
     }
 }
 
-$ms-base: 11px;
-$ms-ratio: $major-third; 
-//$ms-range:
-//  1.1   20em,
-//  1.333 60em;
-//$base-size: 14px 30px;
-//$ratio: $golden;
-
 @mixin font-size-calculate($multiply) {
-    font-size: ms($multiply);
-    line-height: ms($multiply) * $ms-ratio;
-    letter-spacing: -(ms($multiply) / 100);
+    @if ($multiply < 1) {
+        font-size: ms(1) * $multiply;
+    }
+    @else {
+        font-size: ms($multiply);
+    }
+    line-height: ms($multiply) * 1.5;
+    letter-spacing: (ms($multiply) * ($multiply/100));
     font-kerning: normal;
 }
 
@@ -301,42 +283,6 @@ $ms-ratio: $major-third;
     }
 }
 
-html, body {
-    @include font-weight(normal);
-    @include font-size-media(1);
-}
-
-h1 {
-    @include font-weight(light);
-    @include font-size-media(7);
-}
-
-h2 {
-    @include font-weight(light);
-    @include font-size-media(6);
-}
-
-h3 {
-    @include font-weight(light);
-    @include font-size-media(5);
-}
-
-h4 {
-    @include font-weight(light);
-    @include font-size-media(4);
-}
-
-h5 {
-    @include font-weight(light);
-    @include font-size-media(3);
-}
-
-h6 {
-    @include font-weight(light);
-    @include font-size-media(2);
-}
-
-
 @mixin button-maker($size:20px) {
     padding-top: $size;
     padding-bottom: $size;
@@ -358,11 +304,97 @@ h6 {
     &:hover {
         color: $color !important;
         border-color: $color !important;
-        fill: currentColor !important;
+        fill: $color !important;
         svg {
-            fill: currentColor !important;
+            fill: $color !important;
         }
     }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+// BASIC SETUP and FIXES
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+.contaniner, .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+hr.arrow {
+//    margin-top: $global-spacing;
+//    width: 400px;
+//    @include svg-arrow($perdoo-blue);
+//    &:after {
+//        display: block;
+//        width: 40px;
+//        margin-top: -10px;
+//        margin-left: auto;
+//        margin-right: auto;
+//        background-color: white;
+//        padding-left: 10px;
+//    }
+}
+
+* {
+    transition: all .3s ease;
+    color: $perdoo-text-color;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+html, body {
+    @include font-weight(normal);
+    @include font-size-media(1);
+    font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    @include font-weight(bold);
+    @include font-size-media(7);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    @include font-weight(light);
+    @include font-size-media(6);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    @include font-weight(light);
+    @include font-size-media(5);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    @include font-weight(light);
+    @include font-size-media(4);
+    font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+}
+
+h5 {
+    @include font-weight(light);
+    @include font-size-media(3);
+    font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+}
+
+h6 {
+    @include font-weight(light);
+    @include font-size-media(2);
+    font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+}
+
+.perdoo-title {
+    font-family: 'Montserrat', sans-serif;
+    @include font-weight(bold);
+    text-transform: uppercase;
 }
 
 .button-zoom-hover {
@@ -379,27 +411,27 @@ h6 {
 
 .button-outline-blue {
     background: none;
-    border: 1px solid $perdoo-blue;
+    border: $line-height solid $perdoo-blue;
 }
 
 .button-outline-white {
     background: none;
-    border: 1px solid white !important;
+    border: $line-height solid white !important;
 }
 .button-outline-grey {
     background: none;
-    border: 1px solid $perdoo-medium-grey !important;
+    border: $line-height solid $perdoo-medium-grey !important;
 }
 
 .button-fill-white {
     background-color: white;
-    border: 1px solid transparent;
+    border: $line-height solid transparent;
     color: $perdoo-blue;
 }
 
 .button-fill-blue {
     background-color: $perdoo-blue;
-    border: 1px solid transparent;
+    border: $line-height solid transparent;
     color: white;
 }
     
@@ -441,7 +473,7 @@ header {
                 @extend .navbar-brand;
                 svg {
                     color: $perdoo-blue;
-                    fill: currentColor;
+                    fill: $perdoo-blue;
                 }
             }
         }
@@ -486,7 +518,7 @@ header {
         nav {
             #header-branding svg {
                 color: white;
-                fill: currentColor;
+                fill: white;
             }
             #header-navigation {
                 a {
@@ -514,10 +546,11 @@ header {
 section#main-hero {
     @extend .container-fluid;
     background: none;
-    background-image: url(../images/main-bg-charts.svg), linear-gradient(to bottom, rgba(5,157,223,1) 85%,rgba(255,255,255,1) 98%); ;
-    background-size: contain;
+    background-image: url(../images/main-bg-charts.svg);
+    background-color: $perdoo-blue;
+    background-size: 105% auto;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: bottom;
     padding-top: 5%;
     @include media-range(mobile, tablet) {
         padding-top: 80px;
@@ -549,38 +582,124 @@ section#main-hero {
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 
+//section#customer_quotes {
+//    margin-top: $global-spacing;
+//    @extend .container;
+//    * {
+//        text-align: center;
+//    }
+//    
+//    #customer_quotes__customers {
+//    margin-top: $global-spacing / 2;
+//        @extend .col-md-6;
+//        @extend .col-md-offset-3;
+//        @include create-flexbox(space-around, baseline);
+//        
+//        .customer_quotes__customer-column {
+//            @include create-flexbox(center, center, false, column);
+//            
+//            .customer_quotes__face {
+//                border-radius: 50%;
+//                border: 3px solid #ECECEC;
+//                @include fixwidth(120px);
+//                @include fixheight(120px);
+//                
+//            }
+//        }
+//        
+//        .customer_quotes__customer-column:first-child, 
+//        .customer_quotes__customer-column:last-child,  {
+//            transform: scale(.7);
+//            .customer_quotes__logo {
+//                display: none;
+//            }
+//        }   
+//    }
+//    #customer_quotes__quotes {
+//    margin-top: $global-spacing / 2;
+//        @extend .col-md-10;
+//        @extend .col-md-offset-1; 
+//        
+//        h5 {
+//            margin-bottom: 2em;
+//        }
+//        span {
+//            color: lighten(#000, 70%);
+//            text-transform: uppercase;
+//        }
+//    }
+//}
+
 section#customer_quotes {
-    margin-top: $global-spacing;
+    padding-top: $global-spacing;
+    padding-bottom: $global-spacing;
     @extend .container;
     * {
         text-align: center;
     }
+    h6 {
+        margin-bottom: 30px;
+        @extend .perdoo-title;
+        color: lighten($perdoo-text-color, 50%)
+    }
     
     #customer_quotes__customers {
-    margin-top: $global-spacing / 2;
-        @extend .col-md-6;
-        @extend .col-md-offset-3;
-        @include create-flexbox(space-around, baseline);
+        @extend .row;
+        display:flex;
+        flex-wrap:wrap;
+        margin-top: $global-spacing;
         
-        .customer_quotes__customer-column {
-            @include create-flexbox(center, center, false, column);
+        .customer_quotes__customer-box {
+            @extend .col-md-4;
+            display:flex;
+            flex-wrap:wrap;
             
-            .customer_quotes__face {
-                border-radius: 50%;
-                border: 3px solid #ECECEC;
-                @include fixwidth(120px);
-                @include fixheight(120px);
+        
+            .customer_quotes__customer-column {
+                padding: 60px 30px 45px 30px;
+                border: $line-height solid $perdoo-light-grey;
+                border-radius:8px;
+                margin-top:5px;
+                position:relative;
+                box-shadow:0px 0px $perdoo-lightest-grey;
+                &:hover {
+                    box-shadow:0px 15px 20px #f2f2f2;
+                    margin-top:0;
+                }
                 
+                .customer_quotes__name {
+                    @extend .perdoo-title;
+                    @include font-size-media(.8);
+                    color: $perdoo-blue;
+                    margin-bottom: 5px;
+                }
+                
+                .customer_quotes__quote {
+                    color: $perdoo-medium-grey;
+                    span {
+                        color: $perdoo-dark-grey;
+                    }
+                }
+                .customer_quotes__logo {
+                    align-self: flex-end;
+                    max-width: 120px;
+                    max-height: 80px;
+                    margin-top: 20px;
+                }
+
+                .customer_quotes__face {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    right: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    border: 10px solid white;
+                    @include fixwidth(80px);
+                    @include fixheight(80px);
+                }
             }
         }
-        
-        .customer_quotes__customer-column:first-child, 
-        .customer_quotes__customer-column:last-child,  {
-            transform: scale(.7);
-            .customer_quotes__logo {
-                display: none;
-            }
-        }   
     }
     #customer_quotes__quotes {
     margin-top: $global-spacing / 2;
@@ -600,48 +719,64 @@ section#customer_quotes {
 /* ---------------------------------------------------------------------------------------------------------------- */
 
 section#need_perdoo {
-    margin-top: $global-spacing;
-    @extend .container;
-    @include create-flexbox(space-between, space-between, false, column);
-    * {
-        text-align: center;
-        margin-bottom: 1em;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    #need_perdoo__icons {
-        margin-top: $global-spacing / 2;
-        @extend .col-sm-10;
-        @extend .col-sm-offset-1; 
-        @include create-flexbox(space-between, flex-start);
-        
-        hr {
-            width: 1px;
-            height: 160px;
-            background-color: $perdoo-light-grey;
-            margin-top: 0;
-        }
-        
-        .need_perdoo__icon_column {
-            @include create-flexbox(space-between, space-between, false, column);
-            height: 200px;
-            
-            p {
-                text-transform: uppercase;
-                @include font-weight(semibold);
+    padding-top: $global-spacing;
+    padding-bottom: $global-spacing;
+    @extend .container-fluid;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+    border-radius: 2em;
+    background-color: $perdoo-lightest-grey;
+    
+    #neeed_perdoo__container {
+        @extend .container;
+        @include create-flexbox(space-between, space-between, false, column);
+        * {
+            text-align: center;
+            margin-bottom: 1em;
+            &:last-child {
+                margin-bottom: 0;
             }
+        }
+        #need_perdoo__icons {
+            padding: 0;
+            margin-top: $global-spacing;
+            @extend .col-sm-10;
+            @extend .col-sm-offset-1; 
+            @include create-flexbox(space-between, flex-start);
             
-            @include media-range(mobile, mobile) {
+            hr {
+                width: $line-height;
+                height: 100px;
+                background-color: $perdoo-light-grey;
+                margin-top: 0;
+            }
+
+            .need_perdoo__icon_column {
+                @include create-flexbox(space-between, space-between, false, column);
+                height: 100px;
+
+                p {
+                    text-transform: uppercase;
+                    @include font-weight(semibold);
+                    @include media-range(mobile, mobile) {
+                        @include font-size-media(.7);
+                    }
+                }
+                
                 img {
-                    transform: scale(.7);
+                    transform: scale(2);
+                    @include media-range(mobile, mobile) {
+                        transform: scale(1);
+                    }
                 }
             }
         }
     }
     
     #need_perdoo__text {
-    margin-top: $global-spacing / 2;
+        padding: 0;
+        margin-top: $global-spacing / 2;
         @extend .col-md-10;
         @extend .col-md-offset-1;
         
@@ -699,7 +834,7 @@ section#what_is {
         
          
         @include media-range(mobile, tablet) {
-           position: inherit;
+            position: inherit;
             overflow: none;
             width: 100%;
             
@@ -735,17 +870,17 @@ section#ready {
         @extend .container;
         
         * {
-            display: inline-block;
+            display: block;
         }
         
         h5 {
             opacity: .6;
             margin-top: .5em;
-//            margin-bottom: 1.5em;
         }
         
         .button {
             margin: 2em;
+            display: inline-block;
             @extend .button-fill-white;
             @extend .button-medium;
             @extend .button-zoom-hover;
@@ -770,6 +905,9 @@ section#ready {
 
 section#about_perdoo {
     margin-top: $global-spacing * 1.5;
+    @include media-range(mobile, tablet) {
+        margin-top: $global-spacing * 4;
+    }
     @extend .container-fluid;
     
     #about__container {
@@ -788,7 +926,7 @@ section#about_perdoo {
             
             img {
                 border-radius: 50%;
-                margin-bottom: 2em;
+                margin-bottom: $global-spacing / 4;
                 width: 100%;
                 max-width: 100%;
                 height: auto;
@@ -799,7 +937,6 @@ section#about_perdoo {
     #about__quote {
         background-color: $perdoo-lightest-grey;
         padding: $global-spacing / 2;
-//        @extend .spacer-arrow;
         div {
             @extend .container;
             text-align: center;
@@ -838,6 +975,7 @@ section#get-to-know {
     
     h3 {
         text-align: center;
+        padding: 1em;
         padding-right: 70px;
         background-image: url(svg-paperplane-fill(white));
         background-repeat: no-repeat;
@@ -860,7 +998,7 @@ footer {
             * a {
                 display: block;
                 color: $perdoo-medium-grey;
-                fill: currentColor;
+                fill: $perdoo-medium-grey;
                 padding: .5em;
                 padding-left: 0;
                 
@@ -880,76 +1018,84 @@ footer {
 
             #footer-row1__column1 {
                 @extend .col-sm-2;
+                @extend .col-xs-4;
                 padding-left: 0;
                 padding-right: 0;
             }
             #footer-row1__column2 {
                 @extend .col-sm-2;
+                @extend .col-xs-4;
                 padding-left: 0;
                 padding-right: 0;
             }
             #footer-row1__column3 {
                 @extend .col-sm-2;
+                @extend .col-xs-4;
                 padding-left: 0;
                 padding-right: 0;
             }
+            #footer-row1__column1, #footer-row1__column2, #footer-row1__column3 {
+                @include media-range(mobile, mobile) {
+                    text-align: center;
+                }
+            }
             #footer-row1__column4 {
-                @extend .col-sm-3;
-                @extend .col-sm-offset-2; 
+                @extend .col-sm-6;
+                @extend .col-xs-12;
+                @include create-flexbox(flex-end, flex-start);
                 padding-left: 0;
                 padding-right: 0;
+                
+                @include media-range(mobile, mobile) {
+                    justify-content: space-around;
+                    margin-top: 1em;
+                    padding-top: 1em;
+                    border-top: 1px solid darken($perdoo-medium-grey, 15%);
+                }
             
                 .apple_store {
-                    padding-left: 40px;
                     background-image: url(svg-applestore-fill($perdoo-medium-grey));
+                    background-position: 50% 44%;
                     background-repeat: no-repeat;
-                    background-position: left 15px top 7px;
-                    min-width: 70%;
-                    float: right;
+                    @include fixwidth(40px);
+                    @include fixheight(40px);
+                    padding: 0;
                     &:hover {
                         background-image: url(svg-applestore-fill());
                     }
                 }
 
                 .google_play {
-                    padding-left: 40px;
                     background-image: url(svg-googleplay-fill($perdoo-medium-grey));
                     background-repeat: no-repeat;
-                    background-position: left 15px top 11px;
-                    min-width: 70%;
-                    float: right;
+                    background-position: 50% 50%;
+                    @include fixwidth(40px);
+                    @include fixheight(40px);
+                    padding: 0;
                     &:hover {
                         background-image: url(svg-googleplay-fill());
                     }
                 }
-            }
-            
-            #footer-row1__column5 {
-                @extend .col-sm-1;
-                padding-left: 0;
-                padding-right: 0;
                 
                 .linkedin {
                     background-image: url(svg-linkedin-fill($perdoo-medium-grey));
                     background-repeat: no-repeat;
-                    background-position: center center;
+                    background-position: 50% 45%;
                     @include fixwidth(40px);
                     @include fixheight(40px);
                     padding: 0;
-                    float: right;
                     &:hover {
                         background-image: url(svg-linkedin-fill());
                     }
                 }
+                
                 .twitter {
-//                    @include icon-button(svg-twitter-fill($perdoo-medium-grey), $perdoo-medium-grey, $perdoo-blue);
                     background-image: url(svg-twitter-fill($perdoo-medium-grey));
                     background-repeat: no-repeat;
-                    background-position: center center;
+                    background-position: 50% 55%;
                     @include fixwidth(40px);
                     @include fixheight(40px);
                     padding: 0;
-                    float: right;
                     &:hover {
                         background-image: url(svg-twitter-fill());
                     }
@@ -970,7 +1116,7 @@ footer {
             svg {
                 margin-top: 1em;
                 color: $perdoo-medium-grey;
-                fill: currentColor;
+                fill: $perdoo-medium-grey;
             }
         
             #footer-row2__column1 {
