@@ -68,6 +68,7 @@ $mobile-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 992px;
 $wide-width: 1200px;
+$hd-width: 1980px;
 $base-value: 1em;
 $perdoo-blue: #059DDF;
 $perdoo-green: #B0E93D;
@@ -186,6 +187,9 @@ $ms-ratio: $major-second;
         $min-px: $desktop-width;
     }
     @if ($min==wide) {
+        $min-px: $wide-width;
+    }
+    @if ($min==hd) {
         $min-px: $hd-width;
     }
     @if ($max==mobile) {
@@ -196,6 +200,9 @@ $ms-ratio: $major-second;
     }
     @if ($max==desktop) {
         $max-px: $wide-width - 1px;
+    }
+    @if ($max==wide) {
+        $max-px: $hd-width - 1px;
     }
     
     @if ($max==null) {
@@ -280,6 +287,9 @@ $ms-ratio: $major-second;
     
     @include media-range(desktop) {
         @include font-size-calculate($multiply);
+    }
+    @include media-range(hd) {
+        @include font-size-calculate($multiply*1.5);
     }
 }
 
@@ -559,15 +569,18 @@ section#main-hero {
     div {
         @extend .center-block;
         height: 100%;
-        margin-top: 1em;
+        margin-top: 2em;
 
         * {
             color: white;
         }
+        h1 {
+            @include font-size-media(8);
+            
+        }
         h5 {
             opacity: .6;
-            margin-top: .5em;
-            margin-bottom: 1em;
+            margin-bottom: 1.5em;
         }
         img {
             @extend .img-responsive;
@@ -582,54 +595,6 @@ section#main-hero {
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 
-//section#customer_quotes {
-//    margin-top: $global-spacing;
-//    @extend .container;
-//    * {
-//        text-align: center;
-//    }
-//    
-//    #customer_quotes__customers {
-//    margin-top: $global-spacing / 2;
-//        @extend .col-md-6;
-//        @extend .col-md-offset-3;
-//        @include create-flexbox(space-around, baseline);
-//        
-//        .customer_quotes__customer-column {
-//            @include create-flexbox(center, center, false, column);
-//            
-//            .customer_quotes__face {
-//                border-radius: 50%;
-//                border: 3px solid #ECECEC;
-//                @include fixwidth(120px);
-//                @include fixheight(120px);
-//                
-//            }
-//        }
-//        
-//        .customer_quotes__customer-column:first-child, 
-//        .customer_quotes__customer-column:last-child,  {
-//            transform: scale(.7);
-//            .customer_quotes__logo {
-//                display: none;
-//            }
-//        }   
-//    }
-//    #customer_quotes__quotes {
-//    margin-top: $global-spacing / 2;
-//        @extend .col-md-10;
-//        @extend .col-md-offset-1; 
-//        
-//        h5 {
-//            margin-bottom: 2em;
-//        }
-//        span {
-//            color: lighten(#000, 70%);
-//            text-transform: uppercase;
-//        }
-//    }
-//}
-
 section#customer_quotes {
     padding-top: $global-spacing;
     padding-bottom: $global-spacing;
@@ -640,7 +605,6 @@ section#customer_quotes {
     h6 {
         margin-bottom: 30px;
         @extend .perdoo-title;
-        color: lighten($perdoo-text-color, 50%)
     }
     
     #customer_quotes__customers {
@@ -671,13 +635,20 @@ section#customer_quotes {
                     @extend .perdoo-title;
                     @include font-size-media(.8);
                     color: $perdoo-blue;
+                    margin-bottom: -2px;
+                }
+                
+                .customer_quotes__title {
+//                    @extend .perdoo-title;
+                    @include font-size-media(.8);
+                    color: $perdoo-blue;
                     margin-bottom: 5px;
                 }
                 
                 .customer_quotes__quote {
                     color: $perdoo-medium-grey;
-                    span {
-                        color: $perdoo-dark-grey;
+                    strong {
+                        @include font-weight(semibold);
                     }
                 }
                 .customer_quotes__logo {
@@ -798,24 +769,39 @@ section#what_is {
     
     #what_is__container {
         @extend .container;
-        @include media-range(desktop) {
-            @include create-flexbox();
+        @include create-flexbox();
+        
+        @include media-range(mobile, tablet) {
+            flex-direction: column;
         }
         
-        .image-overflow {
+        #what_is__image {
             position: absolute;
             overflow: hidden;
-            right: 50vw;
-            width: 50vw;
+            min-width: 50vw;
+            left: 0;
+            @include create-flexbox(flex-end, center);
             
             img {
                 max-width: 50vw;
+            }
+            
+            @include media-range(mobile, tablet) {
+                position: inherit;
+                justify-content: center;
+                order: 2;
+                
+                img {
+//                    padding-top: $global-spacing;
+                    max-width: 80vw;
+                    display: none;
+                }
             }
         }
         
         #what_is__text {
             @extend .col-md-5;
-            @extend .col-md-offset-7; 
+            @extend .col-md-offset-7;
             
             h6 {
                 text-transform: uppercase;
@@ -830,20 +816,11 @@ section#what_is {
                 height: 30px;
                 padding-top: 2px;
             }
-        }
-        
-         
-        @include media-range(mobile, tablet) {
-            position: inherit;
-            overflow: none;
-            width: 100%;
-            
-            img {
-                display: none;
-            }
                 
-            h1 {
-                text-align: center;
+            @include media-range(mobile, tablet) {
+                h1 {
+                    text-align: center;
+                }
             }
         }
     }
@@ -856,8 +833,6 @@ section#ready {
     @extend .container-fluid;
     @include create-flexbox(center, center, false, column);
     background-color: $perdoo-blue;
-    background-image: url(../images/chart-bg.svg);
-    background-size: cover;
     padding-top: 5em;
     padding-bottom: 5em;
     
@@ -912,25 +887,32 @@ section#about_perdoo {
     
     #about__container {
         @extend .container;
-        
+        margin-bottom: $global-spacing;
         text-align: center;
         
-        .article__col1, .article__col2 {
+        .about__col1, .about__col2 {
             @extend .col-md-6;
-            @include create-flexbox(baseline, flex-start, false, column);
+            @include create-flexbox(baseline, center, false, column);
             @include font-size-media(2);
-            @include line-height-calculate(4);
+            @include line-height-calculate(6);
             text-align: left;
-            margin-top: -$global-spacing;
             padding: $global-spacing / 2;
+            
+            .about__name {
+                text-align: center;
+                margin: $global-spacing / 2;
+                @extend .perdoo-title;
+                @include font-size-media(.8);
+                color: $perdoo-blue;
+            }
             
             img {
                 border-radius: 50%;
                 margin-bottom: $global-spacing / 4;
-                width: 100%;
-                max-width: 100%;
+                width: 40%;
+                max-width: 40%;
                 height: auto;
-                transform: scale(.7);
+//                transform: scale(.7);
             }
         }
     }
@@ -991,7 +973,7 @@ footer {
     section#footer-row1 {
         padding-top: $global-spacing;
         padding-bottom: $global-spacing ;
-        background-color: lighten($perdoo-dark-grey, 5%);
+        background-color: $perdoo-dark-grey;
 
         #footer-row1__container {
             @extend .container;
@@ -1136,6 +1118,12 @@ footer {
                     span {
                         color: $perdoo-blue;
                     }
+                }
+            }
+            @include media-range(mobile, mobile) * {
+                text-align: center !important;
+                svg {
+                    margin-bottom: 1em;
                 }
             }
         }
