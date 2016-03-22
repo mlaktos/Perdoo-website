@@ -70,8 +70,9 @@ $desktop-width: 992px;
 $wide-width: 1200px;
 $hd-width: 1980px;
 $base-value: 1em;
-$perdoo-blue: #059DDF;
-$perdoo-green: #B0E93D;
+$perdoo-blue: #059DDF; // the blue I got from Nick
+//$perdoo-blue: #1c75bf; // the blue we used in the documents
+$perdoo-green: #91DA53;//#B0E93D;
 $perdoo-lightest-grey: #FAFAFA;
 $perdoo-light-grey: #EBEBEB;
 $perdoo-medium-grey: #767676;
@@ -116,54 +117,6 @@ $ms-ratio: $major-second;
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 // SVGs
-
-//@function svg-arrow-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='17' height='21' viewBox='0 0 17 21' xmlns='http://www.w3.org/2000/svg'><path d='M15.164 12.658l-5.868 5.056V.938C9.296.42 8.876 0 8.358 0S7.42.42 7.42.938v16.776l-5.87-5.056c-.392-.34-.985-.294-1.323.098-.338.393-.294.986.1 1.324L8.356 21l8.032-6.92c.392-.34.436-.93.097-1.324-.338-.392-.93-.437-1.323-.098z' fill='"+$color+"' fill-rule='evenodd'/></svg>");
-//}
-//
-//@function svg-checkmark-fill($color:$perdoo-green) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='23' height='22' viewBox='0 0 23 22' xmlns='http://www.w3.org/2000/svg'><path d='M22.685 2.17c-.364.567-.748 1.154-1.112 1.72-.95 1.396-1.882 2.812-2.813 4.228-1.132 1.7-2.245 3.38-3.378 5.078-1.012 1.518-2.023 3.035-3.015 4.552-.566.83-1.112 1.68-1.68 2.488-.707.992-2.224 1.72-3.398 1.133-.47-.23-1.04-.67-1.34-1.1-.04-.06-.08-.12-.14-.18-.13-.18-.25-.35-.37-.53l-.55-.79c-.225-.327-.448-.63-.69-.95-.244-.368-.507-.73-.75-1.076-.263-.384-.526-.748-.79-1.113-.24-.344-.505-.71-.747-1.07-.224-.326-.446-.65-.69-.97-.16-.246-.343-.49-.525-.75l-.425-.61c-.02-.02-.04-.06-.06-.1-.12-.2-.18-.423-.22-.665-.04-.365.1-.75.345-1.01.225-.22.53-.385.83-.466 0 0 .407-.14 1.075.283L7.97 15.07c.405-.444.79-.91 1.194-1.375.97-1.115 1.962-2.247 2.933-3.36 1.213-1.376 2.406-2.77 3.6-4.148 1.092-1.234 2.185-2.468 3.26-3.722.625-.746 1.252-1.495 1.98-2.183.57-.527 1.257-.264 1.74.222 0 0 .71.703 0 1.66z' fill='"+$color+"' fill-rule='evenodd'/></svg>");
-//}
-//
-//@function svg-twitter-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='37' height='37' viewBox='0 0 37 37' xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><path d='M26.67 13.654c-.535.238-1.113.4-1.72.47.62-.37 1.094-.956 1.318-1.655-.58.34-1.22.59-1.9.72-.547-.58-1.326-.948-2.187-.948-1.65 0-2.99 1.34-2.99 2.993 0 .235.03.463.08.682-2.49-.126-4.692-1.317-6.17-3.13-.26.443-.404.957-.404 1.507 0 1.04.528 1.957 1.33 2.494-.49-.016-.95-.15-1.354-.375v.04c0 1.45 1.03 2.66 2.4 2.933-.25.067-.514.103-.79.103-.19 0-.38-.02-.56-.055.38 1.19 1.486 2.054 2.796 2.08-1.023.8-2.314 1.28-3.72 1.28-.24 0-.48-.014-.71-.04 1.325.85 2.9 1.343 4.59 1.343 5.506 0 8.52-4.563 8.52-8.52 0-.13-.005-.26-.01-.388.584-.42 1.092-.95 1.493-1.55z' fill='"+$color+"'/></g></svg>");
-//}
-//
-//@function svg-linkedin-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='13' height='13' viewBox='0 0 13 13' xmlns='http://www.w3.org/2000/svg'><path d='M2.727 13V4.403H.082V13h2.645zm0-11.645C2.71.585 2.2 0 1.37 0 .543 0 0 .586 0 1.355 0 2.108.526 2.71 1.34 2.71h.016c.845 0 1.37-.602 1.37-1.355zM7.043 13V8.102c0-.263.02-.525.095-.712.21-.524.688-1.066 1.49-1.066 1.05 0 1.71.6 1.71 1.778V13H13V7.97c0-2.694-1.432-3.947-3.342-3.947-1.566 0-2.253.88-2.635 1.478l.02-1.15h-2.66c.04.825 0 8.65 0 8.65h2.66z' fill='"+$color+"' fill-rule='evenodd'/></svg>")
-//}
-//
-//@function svg-googleplay-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='17' height='18' viewBox='0 0 17 18' xmlns='http://www.w3.org/2000/svg'><path d='M12.418 5.422L2.776.285C2.276.018 1.73.005 1.26.175L9.477 8.35l2.942-2.928zm3.596 1.916l-2.778-1.48-3.132 3.118 3.132 3.117 2.778-1.48c1.313-.7 1.313-2.575 0-3.275zM.51.678C.214 1 .03 1.43.03 1.92v14.11c0 .493.185.923.48 1.245l8.338-8.3L.508.678zm.75 17.1c.47.17 1.015.156 1.516-.11l9.642-5.14L9.476 9.6 1.26 17.778z' fill='"+$color+"' fill-rule='evenodd'/></svg>");
-//}
-//
-//@function svg-applestore-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='14' height='17' viewBox='0 0 19 23' xmlns='http://www.w3.org/2000/svg'><g fill='"+$color+"' fill-rule='evenodd'><path d='M15.374 12.804c-.03-2.756 2.334-4.078 2.44-4.145C16.486 6.79 14.417 6.53 13.68 6.5c-1.76-.172-3.435.998-4.328.998-.89 0-2.27-.97-3.73-.947-1.92.028-3.688 1.075-4.676 2.73-1.993 3.328-.51 8.26 1.433 10.963.946 1.32 2.08 2.806 3.565 2.752 1.432-.056 1.972-.893 3.703-.893 1.73 0 2.217.892 3.73.864 1.54-.028 2.518-1.347 3.46-2.67 1.09-1.537 1.54-3.02 1.565-3.098-.033-.015-3.002-1.11-3.032-4.4z'/><path d='M12.256 4.487c.92-1.19 1.542-2.842 1.372-4.487-1.326.057-2.93.94-3.884 2.128-.853 1.054-1.6 2.733-1.4 4.348 1.48.123 2.99-.802 3.912-1.99z'/></g></svg>");
-//}
-//
-//@function svg-paperplane-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='61' height='40' viewBox='0 0 61 40' xmlns='http://www.w3.org/2000/svg'><path d='M1.513 13.793L59.487 1.38l-31.68 37.24L1.513 13.793zM59.487 1.38L14.083 25.7M13 25.7v12.92m1.083 0l4.104-4.433' stroke-width='2' stroke='"+$color+"' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-//}
-//
-//@function svg-perdoo-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='87' height='27' viewBox='0 0 87 27' xmlns='http://www.w3.org/2000/svg'><path d='M19.918 12.08l6.253-1.574c-.35-1.095-.84-1.85-1.46-2.263-.67-.445-1.5-.54-2.47-.295-.9.227-1.56.7-1.99 1.42-.43.724-.53 1.628-.31 2.71zM4.224 24.915c0 .572-.207 1.06-.62 1.47-.418.41-.91.614-1.492.614H0V11.7c0-2.87.847-4.823 2.54-5.867 1.694-1.045 3.536-1.57 5.52-1.57 1.033 0 2.076.194 3.13.583 1.052.394 1.894.955 2.513 1.695 1.24 1.6 1.858 3.65 1.858 6.15 0 2.59-.61 4.68-1.85 6.28-1.24 1.56-2.83 2.34-4.77 2.34-1.03 0-1.94-.18-2.72-.55-.83-.41-1.49-1.04-1.98-1.9v6.07zm27.605-3.6V13.39c0-1.597.23-2.938.7-4.022.47-1.09 1.11-1.96 1.93-2.613.78-.613 1.68-1.064 2.72-1.352 1.04-.288 2.11-.43 3.21-.43H41v4.37h-1.4c-1.185 0-2.063.287-2.632.858-.57.58-.857 1.48-.857 2.71v8.41h-4.29zM52.35 0h2.116c.583 0 1.076.213 1.495.64.42.425.62.903.62 1.432v11.874c0 2.882-.84 4.83-2.55 5.848-1.7 1.013-3.55 1.522-5.54 1.522-1.07 0-2.14-.172-3.17-.52-1.04-.342-1.86-.898-2.49-1.672-1.2-1.5-1.8-3.548-1.8-6.145 0-2.56.6-4.61 1.81-6.15 1.25-1.59 2.84-2.38 4.79-2.38 1.04 0 1.95.2 2.74.6.83.49 1.5 1.12 1.99 1.88V0zm6.597 19.54c-.85-.74-1.455-1.734-1.82-2.99-.365-1.248-.546-2.55-.546-3.905 0-1.108.15-2.216.46-3.324.3-1.1.78-2.02 1.43-2.76 1.05-1.23 2.41-1.96 4.07-2.18 1.66-.22 3.16-.09 4.49.4 1.53.62 2.67 1.69 3.4 3.21.69 1.35 1.03 2.93 1.03 4.74 0 1.32-.14 2.44-.42 3.38-.28.95-.64 1.75-1.09 2.41-.96 1.35-2.2 2.19-3.7 2.52-1.33.37-2.67.4-4.03.1-1.35-.31-2.43-.83-3.24-1.57zm14.852 0c-.85-.74-1.46-1.734-1.82-2.99-.37-1.248-.55-2.55-.55-3.905 0-1.108.15-2.216.45-3.324.3-1.1.77-2.02 1.42-2.76 1.05-1.23 2.4-1.96 4.06-2.18 1.66-.22 3.15-.09 4.49.4 1.53.62 2.66 1.69 3.39 3.21.69 1.35 1.03 2.93 1.03 4.74 0 1.32-.14 2.44-.43 3.38-.29.95-.65 1.75-1.09 2.41-.97 1.35-2.21 2.19-3.7 2.52-1.34.37-2.68.4-4.03.1-1.36-.31-2.44-.83-3.25-1.57zm2.99-10.887c-.82.942-1.19 2.344-1.11 4.203.07 1.858.4 3.156.99 3.894.23.33.64.602 1.22.827.58.225 1.17.246 1.77.063s1.14-.644 1.61-1.382c.46-.733.72-1.92.76-3.554 0-1.476-.23-2.58-.68-3.314-.45-.737-.96-1.21-1.54-1.413-.58-.204-1.17-.214-1.75-.03-.58.187-1.01.423-1.29.706zm-14.86 0c-.82.942-1.19 2.344-1.11 4.203.07 1.858.4 3.156.99 3.894.23.33.64.602 1.22.827.58.225 1.17.246 1.77.063s1.14-.644 1.61-1.382c.46-.733.71-1.92.75-3.554 0-1.476-.22-2.58-.67-3.314-.45-.737-.96-1.21-1.54-1.413-.59-.204-1.17-.214-1.75-.03-.59.187-1.02.423-1.29.706zm-17.38 3.982c0 1.668.31 2.937.93 3.817.62.874 1.51 1.31 2.67 1.31 1.11 0 1.98-.436 2.6-1.31.57-.88.86-2.15.86-3.817 0-1.503-.32-2.692-.93-3.566-.66-.84-1.55-1.26-2.67-1.26-1.08 0-1.93.43-2.55 1.31-.62.84-.93 2-.93 3.51zm-33.25.25c0-1.63-.31-2.878-.93-3.758-.62-.874-1.52-1.31-2.67-1.31-1.12 0-1.99.436-2.6 1.31-.58.794-.87 2.047-.87 3.758 0 1.584.3 2.772.93 3.567.62.874 1.51 1.31 2.67 1.31 1.07 0 1.92-.436 2.54-1.31.62-.88.93-2.07.93-3.567zm19.81 2.375c-.2 1.264-.69 2.35-1.47 3.26-1.01 1.218-2.46 2.06-4.34 2.52-2.28.56-4.25.265-5.9-.888-1.64-1.11-2.8-2.995-3.46-5.656-.64-2.54-.52-4.67.37-6.404.92-1.784 2.52-2.96 4.8-3.52 2.4-.59 4.43-.336 6.11.766 1.64 1.148 2.79 3.03 3.45 5.646l.1.412.06.24c.05.197.06.34.04.43L20.52 14.62c.116.405.25.77.406 1.09l-.01.005.027.063v.002c.028.06.056.12.087.18l.003.005.004.008.022.045v.017l.02.04.01.017.02.048v.006l.07.11v.005l.03.06.03.05v.02l.03.04.01.01v.01l.03.05v.01l.04.05v.01l.04.05.04.05v.01l.04.05v.01l.03.04.01.01v.01l.03.03.03.03.023.02.02.02.026.03.02.02h.002l.02.03.02.02.02.02.02.02h.007l.03.02h.005l.02.01.01.006.03.02.01.01h.002l.04.03.03.02.02.02.02.02.01.01.03.02.02.016h.01l.025.02.026.014.03.02.02.02h.003l.03.02.017.005.03.02.016.01.03.013.03.02h.006c.1.057.2.1.3.14v.007h.01l.04.02.01.01h.01l.04.02h.01l.04.02h.02l.06.02h.01l.06.02.064.02.127.03.01.005h.003l.055.01h.01l.06.01h.01l.058.01h.006l.006.006h.01l.055.01h.01l.06.01.07.01h.01l.06.007h.007l.138.01h.37l.06-.005h.01l.065-.01.07-.01.07-.01.07-.01.027-.01.06-.01h.02l.07-.01.02-.005.05-.015h.017l.07-.02.01-.006.016-.01.05-.01.03-.01.06-.02H25l.07-.02.02-.01.05-.02.02-.01.06-.02.026-.01.036-.012.03-.01h.005l.056-.02h.006l.07-.03.01-.01.05-.02.01-.01.06-.03.02-.01.04-.02.02-.01.05-.03.01-.02.05-.03h.01l.06-.04.01-.008.05-.03.02-.017.03-.03.03-.02.04-.035.02-.02.04-.035.02-.01h.005l.04-.04.03-.028.02-.02.026-.02.038-.037.03-.03.03-.035.02-.016.01-.007.03-.03.02-.03h.005l.02-.02v-.02l.003-.002.01-.02.005-.003.017-.02.01-.02v-.01l.03-.03.01-.017.01-.02.01-.02h.01l.012-.028V16.5l.014-.02.01-.004.01-.02v-.01l.01-.01.03-.04v-.02l.01-.01.01-.02v-.006l.02-.02v-.006l.014-.02.01-.01.02-.03.006-.004.02-.02.01-.02.01-.02.02-.02.01-.02v-.005l.02-.025.01-.024.014-.026V16l.01-.02.01-.03.005-.01.01-.02.01-.003v-.01l.02-.04.01-.02.003-.01.005-.014.01-.01.01-.025.01-.03.01-.03.01-.026.01-.03.01-.026.01-.02v-.02l.01-.02v-.002l4.04-.3z' fill='"+$color+"' fill-rule='evenodd'/></svg>");
-//}
-//
-//@function svg-alignment-icon-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='41' height='39' viewBox='0 0 41 39' xmlns='http://www.w3.org/2000/svg'><path d='M20.208 11.985c3.304 0 5.99-2.688 5.99-5.993C26.2 2.688 23.513 0 20.21 0c-3.304 0-5.993 2.688-5.993 5.992 0 3.305 2.69 5.993 5.993 5.993zm0-10.485c2.476 0 4.49 2.015 4.49 4.492 0 2.478-2.014 4.493-4.49 4.493-2.477 0-4.493-2.015-4.493-4.493 0-2.477 2.016-4.492 4.493-4.492zm15.526 27.322c-2.583 0-4.683 2.1-4.683 4.683 0 2.582 2.1 4.683 4.686 4.683 2.58 0 4.682-2.1 4.682-4.683 0-2.582-2.1-4.683-4.682-4.683zm0 7.866c-1.756 0-3.183-1.428-3.183-3.183s1.43-3.183 3.186-3.183c1.754 0 3.18 1.428 3.18 3.183s-1.426 3.183-3.18 3.183zM4.682 27.49c.414 0 .75-.336.75-.75v-5.018h14.026v5.115c0 .414.336.75.75.75s.75-.336.75-.75v-5.115H34.86v5.018c0 .414.337.75.75.75.415 0 .75-.336.75-.75v-5.768c0-.414-.335-.75-.75-.75H20.96v-6.08c0-.413-.336-.75-.75-.75s-.75.337-.75.75v6.08H4.682c-.415 0-.75.336-.75.75v5.768c0 .414.335.75.75.75zm15.526 1.332c-2.582 0-4.682 2.1-4.682 4.683 0 2.582 2.1 4.683 4.682 4.683 2.58 0 4.682-2.1 4.682-4.683 0-2.582-2.1-4.683-4.682-4.683zm0 7.866c-1.754 0-3.182-1.428-3.182-3.183s1.428-3.183 3.182-3.183 3.182 1.428 3.182 3.183-1.428 3.183-3.182 3.183zM4.682 28.822C2.1 28.822 0 30.922 0 33.505c0 2.582 2.1 4.683 4.682 4.683 2.58 0 4.68-2.1 4.68-4.683 0-2.582-2.1-4.683-4.68-4.683zm0 7.866c-1.755 0-3.182-1.428-3.182-3.183s1.427-3.183 3.182-3.183c1.754 0 3.18 1.428 3.18 3.183s-1.426 3.183-3.18 3.183z' fill='"+$color+"' fill-rule='evenodd'/></svg>");
-//}
-//
-//@function svg-engagement-icon-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='44' height='39' viewBox='0 0 44 39' xmlns='http://www.w3.org/2000/svg'><path d='M32.352.168c-4.293 0-8.223 2.584-10.555 6.842C19.42 2.59 15.575 0 11.277 0 5.722 0 .064 4.732 0 13.777c-.052 7.317 5.696 10.782 10.314 13.566.817.49 1.612.97 2.347 1.452 4.82 3.154 8 7.365 8.428 8.834.096.33.397.55.74.55h.01c.347-.005.648-.24.736-.577.374-1.447 3.915-5.74 8.4-8.915.88-.624 1.847-1.225 2.868-1.86 4.605-2.864 9.82-6.11 9.77-13.14C43.542 4.4 37.73.17 32.35.17zm.672 25.356c-1.042.65-2.027 1.262-2.944 1.913-3.384 2.393-6.76 5.807-8.26 8.215-1.37-2.242-4.355-5.553-8.314-8.146-.753-.493-1.564-.98-2.395-1.48-4.502-2.72-9.612-5.798-9.563-12.238C1.6 5.373 6.627 1.54 11.277 1.54c4.12 0 7.787 2.82 9.81 7.543.12.282.4.466.71.466.31 0 .586-.19.706-.47 1.935-4.55 5.71-7.37 9.85-7.37 4.638 0 9.657 3.75 9.712 11.99.045 6.165-4.574 9.04-9.04 11.82z' fill='"+$color+"' fill-rule='evenodd'/></svg>");
-//}
-//
-//@function svg-transparency-icon-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg width='56' height='38' viewBox='0 0 56 38' xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><path d='M13.72 12.372c-.37 0-.668.297-.668.663v24.273c0 .366.298.663.668.663.368 0 .668-.293.668-.66V13.036c0-.366-.3-.663-.668-.663zm-6.08 5.42c-.37 0-.67.297-.67.663v18.853c0 .366.3.663.67.663.37 0 .668-.293.668-.66V18.456c0-.366-.3-.663-.668-.663zm11.492 10.064v9.452c0 .366.3.663.668.663.37 0 .668-.293.668-.66v-9.45c0-.366-.3-.663-.668-.663-.368 0-.668.297-.668.663zm6.08 4.28v5.172c0 .366.3.663.67.663.367 0 .667-.293.667-.66v-5.17c0-.366-.3-.663-.67-.663-.37 0-.67.297-.67.663zm-24.475.34v4.676c0 .365.3.662.668.662.37 0 .667-.297.667-.662v-4.675c0-.366-.298-.663-.667-.663-.37 0-.668.297-.668.663z' fill='"+$color+"'/><path d='M55.325 36.634L41.897 23.31c2.327-2.48 3.765-5.79 3.765-9.437C45.662 6.223 39.39 0 31.682 0 23.97 0 17.7 6.223 17.7 13.873c0 7.647 6.27 13.87 13.98 13.87 3.552 0 6.79-1.332 9.26-3.507L54.38 37.57c.13.13.3.195.47.195.172 0 .343-.065.473-.194.26-.255.26-.674 0-.933zM19.04 13.874c0-6.92 5.67-12.548 12.64-12.548 6.972 0 12.646 5.628 12.646 12.547 0 6.917-5.674 12.546-12.645 12.546-6.97 0-12.64-5.63-12.64-12.55z' fill='"+$color+"'/></g></svg>");
-//}
-//
-//@function svg-rocket-icon-fill($color:$perdoo-blue) {
-//    @return ("data:image/svg+xml;charset=UTF-8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M.5 24.09c-.276 0-.5-.223-.5-.5 0-2.03.29-3.976 3.806-5.46.25-.105.547.012.655.267.11.254-.01.547-.26.655-3.2 1.35-3.2 2.97-3.2 4.54 0 .275-.22.5-.5.5z' fill='"+$color+"'/><path d='M.5 24.09c-.276 0-.5-.223-.5-.5s.224-.5.5-.5c1.568 0 3.19 0 4.54-3.194.107-.255.402-.373.654-.266.255.107.374.4.267.655C4.48 23.8 2.53 24.09.5 24.09zm4.5-10H1.5c-.19 0-.362-.106-.447-.275s-.067-.372.047-.524l3-4c.095-.12.243-.2.4-.2H8c.276 0 .5.23.5.5s-.224.5-.5.5H4.75l-2.25 3H5c.276 0 .5.23.5.5s-.224.5-.5.5z' fill='"+$color+"'/><path d='M9.5 20.09c-.096 0-.19-.026-.274-.08-.062-.042-1.514-1-2.58-2.065l-.5-.5c-1.065-1.065-2.023-2.518-2.063-2.58-.115-.174-.108-.402.016-.57C13.79 1.137 18.43.09 23.5.09c.276 0 .5.225.5.5 0 5.062-1.046 9.704-14.203 19.403-.088.065-.193.098-.297.098zm-2.146-2.853c.723.722 1.668 1.414 2.135 1.74 12.1-8.972 13.43-13.194 13.5-17.882-4.69.077-8.91 1.404-17.887 13.507.326.467 1.02 1.413 1.74 2.135l.5.5z' fill='"+$color+"'/><path d='M6.5 21.09c-.06 0-.116-.01-.173-.03-.036-.014-.904-.338-1.68-1.116l-.5-.5c-.777-.777-1.103-1.644-1.116-1.68-.05-.16-.03-.337.07-.473l1.5-2c.17-.22.48-.26.7-.1.22.17.27.48.1.7l-1.32 1.77c.13.26.388.69.78 1.088l.5.5c.397.395.826.646 1.085.776l1.76-1.33c.22-.164.535-.12.7.1.166.223.12.536-.1.7l-2 1.5c-.087.068-.193.1-.3.1zm4 2c-.076 0-.153-.017-.224-.052-.17-.085-.276-.258-.276-.447v-3.5c0-.27.224-.5.5-.5s.5.23.5.5v2.5l3-2.25v-3.25c0-.27.224-.5.5-.5s.5.23.5.5v3.5c0 .16-.074.31-.2.4l-4 3c-.088.07-.194.1-.3.1zm6-13c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5S19 6.214 19 7.59s-1.12 2.5-2.5 2.5zm0-4c-.827 0-1.5.674-1.5 1.5s.673 1.5 1.5 1.5 1.5-.67 1.5-1.5-.673-1.5-1.5-1.5z' fill='"+$color+"'/></svg>");
-//}
 
 @import 'svg-icons.scss';
 
@@ -329,7 +282,6 @@ $ms-ratio: $major-second;
 }
 
 @mixin icon-button ($icon-svg, $icon-color, $icon-color-hover) {
-//    $icon-svg: svg-size($circle-icon-svg, 20, 20);
     background: url('#{svg-fill($icon-svg, $icon-color)}');
     
     &:hover {
@@ -359,21 +311,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
 .contaniner, .container-fluid {
     padding: 0;
     margin: 0;
-}
-
-hr.arrow {
-//    margin-top: $global-spacing;
-//    width: 400px;
-//    @include svg-arrow($perdoo-blue);
-//    &:after {
-//        display: block;
-//        width: 40px;
-//        margin-top: -10px;
-//        margin-left: auto;
-//        margin-right: auto;
-//        background-color: white;
-//        padding-left: 10px;
-//    }
 }
 
 * {
@@ -584,6 +521,10 @@ header {
 
 section#main-hero {
     @extend .container-fluid;
+    @include portrait-landscape-spacing(padding-top, 8vh);
+    @include media-range(mobile, mobile) {
+        @include portrait-landscape-spacing(padding-top, 16vh);
+    }
     background: none;
     background-image: url(../images/main-bg-charts.svg);
     background-color: $perdoo-blue;
@@ -591,12 +532,9 @@ section#main-hero {
     background-repeat: no-repeat;
     background-position: bottom;
     
-    @include portrait-landscape-spacing(padding-top, 10vh)
-    
     div {
         @extend .center-block;
         height: 100%;
-        margin-top: 2em;
 
         * {
             color: white;
@@ -794,10 +732,6 @@ section#need_perdoo {
     padding-top: $global-spacing;
     padding-bottom: $global-spacing;
     @extend .container-fluid;
-    margin-left: 1em;
-    margin-right: 1em;
-    
-    border-radius: 2em;
     background-color: $perdoo-blue;
     
     #neeed_perdoo__container {
@@ -1067,7 +1001,8 @@ section#ready {
 section#about_perdoo {
     @extend .container-fluid;
     background-color: $perdoo-blue;
-    @include portrait-landscape-spacing(padding-top, 16vh)
+//    @include portrait-landscape-spacing(padding-top, 100px)
+    padding-top: 100px;
     padding-bottom: 3em;
     
     #about__container {
@@ -1096,6 +1031,246 @@ section#about_perdoo {
             h6 {
                 text-align: center;
                 @include font-weight(bold);
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#price_header {
+    @extend .container-fluid;
+    background-color: $perdoo-blue;
+//    @include portrait-landscape-spacing(padding-top, 100px)
+    padding-top: 100px;
+    padding-bottom: 3em;
+    
+    #price_header__container {
+        @extend .container; 
+        * {
+            color: white;
+            text-align: center;
+        }
+        
+        h5 {
+            opacity: .6;
+        }
+        
+        div {
+            @extend .col-md-6;
+            @extend .col-md-offset-3;
+        }
+    }
+}
+
+section#price {
+    @extend .container-fluid;
+    
+    #price__container {
+        @extend .container; 
+        padding: 0;
+        
+        h2 {
+            text-transform: uppercase; 
+            @include font-size-media(4);
+        }
+        
+        #price__col1 {
+            @extend .col-md-8; 
+            margin-top: 40px; 
+            margin-bottom: 40px;
+            
+            #price__calculator {
+                form {
+                    margin-top: 20px;
+                    input {
+                        width: 100px;
+                        height: 50px;
+                        border-radius: 5px;
+                        border: $line-height solid $perdoo-light-grey;
+                        margin-right: 4px;
+                        padding: 10px;
+                        @include font-size-media(6);
+                        @include font-weight(semibold);
+                        color: $perdoo-blue;
+                        letter-spacing: -1px !important;
+                    }
+                    label {
+                        color: $perdoo-blue;
+                        @include font-weight(normal);
+                    }
+                }
+                p {
+                    color: lighten($perdoo-medium-grey, 30%);
+                }
+                #price__calculator-container {
+                    width: 90%;
+                    #price__calculator-slider {
+//                        border-bottom: 5px solid transparent;
+                        background-image: url(svg-dashed-rounded-line());
+                        background-position: right 15px;
+                        background-repeat: repeat-x;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        
+                        #price__calculator-slider-button {
+                            margin-bottom: -15px;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            background-color: $perdoo-blue;
+                            border: 4px solid white;
+                            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+                        }
+                    }
+                    #price__calulcator-min-max {
+                        @include create-flexbox(space-between);
+                        * {
+                           color: lighten($perdoo-medium-grey, 30%); 
+                        }
+                        #price__calulcator-min {
+                            margin-left: 10px;
+                        }
+                        #price__calulcator-max {
+                            float: right;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            #price__available, #price__soon {
+                margin-top: 40px;
+                img {
+                    float: left;
+                    display: inline-block;
+                    height: 100%;
+                    width: 40px;
+                }
+                div {
+                    margin-left: 60px;
+                    h2 {
+                        padding-top: 5px;
+                    }
+                    ul {
+                        list-style-type: none;
+                    }
+                    li {
+                        padding: 15px 5px 0px 0px;
+                        @include font-size-media(2);
+                    }
+                    li:before {
+                        content: '';
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        border: 2px solid lighten($perdoo-medium-grey, 30%); 
+                        margin-right: 15px;
+                    }
+                }
+            }
+            #price__soon {
+                padding-top: 40px;
+                border-top: 2px dotted $perdoo-light-grey; 
+                * {
+                    color: lighten($perdoo-medium-grey, 30%); 
+                }
+            }
+        }
+        
+        #price__col2 {
+            @extend .col-md-4;
+            margin-top: 25px;
+            border: 1px solid lighten($perdoo-medium-grey, 30%);
+            border-radius: 10px;
+            padding: 0;
+            
+            #price__col2_title {
+                padding: 15px;
+                border-bottom: 1px solid lighten($perdoo-medium-grey, 30%);
+                h2 {
+                    color: $perdoo-blue;
+                }
+                p {
+                    color: $perdoo-medium-grey;
+                    @include font-weight(semibold);
+                }
+            }
+            #price__col2_indicator {
+                padding: 15px;
+                border-bottom: 1px solid lighten($perdoo-medium-grey, 30%);
+                p {
+                    color: lighten($perdoo-medium-grey, 30%);
+                    @include font-weight(semibold);
+                }
+                p#price__col2_price {
+                    color: $perdoo-green;
+                    @include font-size-media(12);
+                    letter-spacing: -1px !important;
+                    
+                    span {
+                        color: $perdoo-green; 
+                        @include font-size-media(1);
+                    }
+                }
+                #price__switch_container {
+                    @include create-flexbox(center, center);
+                    margin-top: 14px;
+                    $switch-size: 30px;
+                    $switch-margin: 2px;
+                    
+                    #price__switch_monthly, #price__switch_annual {
+                        color: lighten($perdoo-medium-grey, 30%);
+                        @include font-weight(semibold);
+                    }
+                    #price__switch_monthly.selected, #price__switch_annual.selected {
+                        color: $perdoo-blue;
+                    }
+                    
+                    #price__switch {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        border: 2px solid $perdoo-light-grey;
+                        border-radius: $switch-size / 2;
+                        padding: $switch-margin;
+                        width: $switch-size * 2.2;
+                        height: $switch-size;
+                        
+                        #price__switch_button {
+                            background-color: $perdoo-blue;
+                            border-radius: $switch-size - $switch-margin;
+                            width: $switch-size - $switch-margin * 4;
+                            height: $switch-size - $switch-margin * 4;
+                        }
+                        #price__switch_button.annual {
+                            margin-left: $switch-size * 1.2;
+                        }
+                        #price__switch_button.monthly {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            #price__col2_start {
+                background-color: $perdoo-lightest-grey;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                text-align: center;
+                padding-bottom: 50px;
+                
+                p {
+                    padding-top: 25px;
+                    padding-bottom: 35px;
+                    color: lighten($perdoo-medium-grey, 30%);
+                }
+                
+                .button {
+                    @extend .button-fill-blue;
+                    @include button-maker(20px);
+                    @include font-weight(semibold);
+//                    @extend .button-medium;
+//                    @extend .button-zoom-hover;
+                }
             }
         }
     }
