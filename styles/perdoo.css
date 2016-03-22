@@ -4163,9 +4163,9 @@ h6 {
   text-decoration: none;
 }
 
-.button-outline-blue, header nav #header-navigation ul li .button, .header-bright .button {
+.button-outline-blue, header nav #header-navigation ul li .button {
   background: none;
-  border: 2px solid #059DDF !important;
+  border: 2px solid #059DDF;
 }
 
 .button-outline-white, .header-bright nav #header-navigation .button {

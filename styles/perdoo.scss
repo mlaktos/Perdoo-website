@@ -349,7 +349,7 @@ h6 {
 
 .button-outline-blue {
     background: none;
-    border: $line-height solid $perdoo-blue !important;
+    border: $line-height solid $perdoo-blue;
 }
 
 .button-outline-white {
@@ -476,11 +476,6 @@ header {
                     }
                 }
             }
-        }
-    }
-    @include media-range(mobile, mobile) {
-        .button {
-            @extend .button-outline-blue;
         }
     }
 }
