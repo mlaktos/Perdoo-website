@@ -336,53 +336,53 @@ hr {
   cursor: pointer;
 }
 
-.container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#impressum #impressum__container, section#terms #terms__container, section#ready #ready__container, section#about_perdoo #about__container, section#price_header #price_header__container, section#price #price__container, section#founders_perdoo #founders__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
+.container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#ready #ready__container, section#impressum #impressum__container, section#terms #terms__container, section#about_perdoo #about__container, section#founders_perdoo #founders__container, section#price_header #price_header__container, section#price #price__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container:before, header nav:before, section#customer_quotes:before, section#need_perdoo #neeed_perdoo__container:before, section#what_is #what_is__container:before, section#impressum #impressum__container:before, section#terms #terms__container:before, section#ready #ready__container:before, section#about_perdoo #about__container:before, section#price_header #price_header__container:before, section#price #price__container:before, section#founders_perdoo #founders__container:before, footer section#footer-row1 #footer-row1__container:before, footer section#footer-row2 #footer-row2__container:before, .container:after, header nav:after, section#customer_quotes:after, section#need_perdoo #neeed_perdoo__container:after, section#what_is #what_is__container:after, section#impressum #impressum__container:after, section#terms #terms__container:after, section#ready #ready__container:after, section#about_perdoo #about__container:after, section#price_header #price_header__container:after, section#price #price__container:after, section#founders_perdoo #founders__container:after, footer section#footer-row1 #footer-row1__container:after, footer section#footer-row2 #footer-row2__container:after {
+.container:before, header nav:before, section#customer_quotes:before, section#need_perdoo #neeed_perdoo__container:before, section#what_is #what_is__container:before, section#ready #ready__container:before, section#impressum #impressum__container:before, section#terms #terms__container:before, section#about_perdoo #about__container:before, section#founders_perdoo #founders__container:before, section#price_header #price_header__container:before, section#price #price__container:before, footer section#footer-row1 #footer-row1__container:before, footer section#footer-row2 #footer-row2__container:before, .container:after, header nav:after, section#customer_quotes:after, section#need_perdoo #neeed_perdoo__container:after, section#what_is #what_is__container:after, section#ready #ready__container:after, section#impressum #impressum__container:after, section#terms #terms__container:after, section#about_perdoo #about__container:after, section#founders_perdoo #founders__container:after, section#price_header #price_header__container:after, section#price #price__container:after, footer section#footer-row1 #footer-row1__container:after, footer section#footer-row2 #footer-row2__container:after {
   content: " ";
   display: table;
 }
 
-.container:after, header nav:after, section#customer_quotes:after, section#need_perdoo #neeed_perdoo__container:after, section#what_is #what_is__container:after, section#impressum #impressum__container:after, section#terms #terms__container:after, section#ready #ready__container:after, section#about_perdoo #about__container:after, section#price_header #price_header__container:after, section#price #price__container:after, section#founders_perdoo #founders__container:after, footer section#footer-row1 #footer-row1__container:after, footer section#footer-row2 #footer-row2__container:after {
+.container:after, header nav:after, section#customer_quotes:after, section#need_perdoo #neeed_perdoo__container:after, section#what_is #what_is__container:after, section#ready #ready__container:after, section#impressum #impressum__container:after, section#terms #terms__container:after, section#about_perdoo #about__container:after, section#founders_perdoo #founders__container:after, section#price_header #price_header__container:after, section#price #price__container:after, footer section#footer-row1 #footer-row1__container:after, footer section#footer-row2 #footer-row2__container:after {
   clear: both;
 }
 
 @media (min-width: 768px) {
-  .container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#impressum #impressum__container, section#terms #terms__container, section#ready #ready__container, section#about_perdoo #about__container, section#price_header #price_header__container, section#price #price__container, section#founders_perdoo #founders__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
+  .container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#ready #ready__container, section#impressum #impressum__container, section#terms #terms__container, section#about_perdoo #about__container, section#founders_perdoo #founders__container, section#price_header #price_header__container, section#price #price__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  .container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#impressum #impressum__container, section#terms #terms__container, section#ready #ready__container, section#about_perdoo #about__container, section#price_header #price_header__container, section#price #price__container, section#founders_perdoo #founders__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
+  .container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#ready #ready__container, section#impressum #impressum__container, section#terms #terms__container, section#about_perdoo #about__container, section#founders_perdoo #founders__container, section#price_header #price_header__container, section#price #price__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
     width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#impressum #impressum__container, section#terms #terms__container, section#ready #ready__container, section#about_perdoo #about__container, section#price_header #price_header__container, section#price #price__container, section#founders_perdoo #founders__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
+  .container, header nav, section#customer_quotes, section#need_perdoo #neeed_perdoo__container, section#what_is #what_is__container, section#ready #ready__container, section#impressum #impressum__container, section#terms #terms__container, section#about_perdoo #about__container, section#founders_perdoo #founders__container, section#price_header #price_header__container, section#price #price__container, footer section#footer-row1 #footer-row1__container, footer section#footer-row2 #footer-row2__container {
     width: 1170px;
   }
 }
 
-.container-fluid, section#main-hero, section#need_perdoo, section#what_is, section#impressum, section#terms, section#ready, section#about_perdoo, section#price_header, section#price, section#founders_perdoo, section#get-to-know, footer {
+.container-fluid, section#main-hero, section#need_perdoo, section#what_is, section#ready, section#impressum, section#terms, section#about_perdoo, section#founders_perdoo, section#price_header, section#price, section#get-to-know, footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container-fluid:before, section#main-hero:before, section#need_perdoo:before, section#what_is:before, section#impressum:before, section#terms:before, section#ready:before, section#about_perdoo:before, section#price_header:before, section#price:before, section#founders_perdoo:before, section#get-to-know:before, footer:before, .container-fluid:after, section#main-hero:after, section#need_perdoo:after, section#what_is:after, section#impressum:after, section#terms:after, section#ready:after, section#about_perdoo:after, section#price_header:after, section#price:after, section#founders_perdoo:after, section#get-to-know:after, footer:after {
+.container-fluid:before, section#main-hero:before, section#need_perdoo:before, section#what_is:before, section#ready:before, section#impressum:before, section#terms:before, section#about_perdoo:before, section#founders_perdoo:before, section#price_header:before, section#price:before, section#get-to-know:before, footer:before, .container-fluid:after, section#main-hero:after, section#need_perdoo:after, section#what_is:after, section#ready:after, section#impressum:after, section#terms:after, section#about_perdoo:after, section#founders_perdoo:after, section#price_header:after, section#price:after, section#get-to-know:after, footer:after {
   content: " ";
   display: table;
 }
 
-.container-fluid:after, section#main-hero:after, section#need_perdoo:after, section#what_is:after, section#impressum:after, section#terms:after, section#ready:after, section#about_perdoo:after, section#price_header:after, section#price:after, section#founders_perdoo:after, section#get-to-know:after, footer:after {
+.container-fluid:after, section#main-hero:after, section#need_perdoo:after, section#what_is:after, section#ready:after, section#impressum:after, section#terms:after, section#about_perdoo:after, section#founders_perdoo:after, section#price_header:after, section#price:after, section#get-to-know:after, footer:after {
   clear: both;
 }
 
@@ -400,7 +400,7 @@ hr {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, footer section#footer-row1 #footer-row1__container #footer-row1__column1, footer section#footer-row1 #footer-row1__container #footer-row1__column2, footer section#footer-row1 #footer-row1__container #footer-row1__column3, .col-md-2, section#impressum #impressum__container .impressum__col1, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, footer section#footer-row1 #footer-row1__container #footer-row1__column1, footer section#footer-row1 #footer-row1__container #footer-row1__column2, footer section#footer-row1 #footer-row1__container #footer-row1__column3, .col-sm-4, .col-md-4, section#customer_quotes #customer_quotes__customers .customer_quotes__customer-box, section#price #price__container #price__col2, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, section#what_is #what_is__container #what_is__text, .col-lg-5, .col-xs-6, .col-sm-6, footer section#footer-row1 #footer-row1__container #footer-row1__column4, footer section#footer-row2 #footer-row2__container #footer-row2__column1, footer section#footer-row2 #footer-row2__container #footer-row2__column2, .col-md-6, section#about_perdoo #about__container div, section#price_header #price_header__container div, section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, section#impressum #impressum__container .impressum__col2, section#price #price__container #price__col1, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, section#need_perdoo #neeed_perdoo__container #need_perdoo__icons, .col-md-10, section#customer_quotes #customer_quotes__quotes, section#need_perdoo #need_perdoo__text, section#terms #terms__container div, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, footer section#footer-row1 #footer-row1__container #footer-row1__column4, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, footer section#footer-row1 #footer-row1__container #footer-row1__column1, footer section#footer-row1 #footer-row1__container #footer-row1__column2, footer section#footer-row1 #footer-row1__container #footer-row1__column3, .col-md-2, section#impressum #impressum__container .impressum__col1, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, footer section#footer-row1 #footer-row1__container #footer-row1__column1, footer section#footer-row1 #footer-row1__container #footer-row1__column2, footer section#footer-row1 #footer-row1__container #footer-row1__column3, .col-sm-4, .col-md-4, section#customer_quotes #customer_quotes__customers .customer_quotes__customer-box, section#price #price__container #price__col2, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, footer section#footer-row1 #footer-row1__container #footer-row1__column4, footer section#footer-row2 #footer-row2__container #footer-row2__column1, footer section#footer-row2 #footer-row2__container #footer-row2__column2, .col-md-6, section#what_is #what_is__image, section#what_is #what_is__container #what_is__text, section#about_perdoo #about__container div, section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2, section#price_header #price_header__container div, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, section#impressum #impressum__container .impressum__col2, section#price #price__container #price__col1, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, section#need_perdoo #neeed_perdoo__container #need_perdoo__icons, .col-md-10, section#customer_quotes #customer_quotes__quotes, section#need_perdoo #need_perdoo__text, section#terms #terms__container div, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, footer section#footer-row1 #footer-row1__container #footer-row1__column4, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -775,7 +775,7 @@ hr {
 }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, section#impressum #impressum__container .impressum__col1, .col-md-3, .col-md-4, section#customer_quotes #customer_quotes__customers .customer_quotes__customer-box, section#price #price__container #price__col2, .col-md-5, section#what_is #what_is__container #what_is__text, .col-md-6, section#about_perdoo #about__container div, section#price_header #price_header__container div, section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2, .col-md-7, .col-md-8, section#impressum #impressum__container .impressum__col2, section#price #price__container #price__col1, .col-md-9, .col-md-10, section#customer_quotes #customer_quotes__quotes, section#need_perdoo #need_perdoo__text, section#terms #terms__container div, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, section#impressum #impressum__container .impressum__col1, .col-md-3, .col-md-4, section#customer_quotes #customer_quotes__customers .customer_quotes__customer-box, section#price #price__container #price__col2, .col-md-5, .col-md-6, section#what_is #what_is__image, section#what_is #what_is__container #what_is__text, section#about_perdoo #about__container div, section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2, section#price_header #price_header__container div, .col-md-7, .col-md-8, section#impressum #impressum__container .impressum__col2, section#price #price__container #price__col1, .col-md-9, .col-md-10, section#customer_quotes #customer_quotes__quotes, section#need_perdoo #need_perdoo__text, section#terms #terms__container div, .col-md-11, .col-md-12 {
     float: left;
   }
   .col-md-1 {
@@ -790,10 +790,10 @@ hr {
   .col-md-4, section#customer_quotes #customer_quotes__customers .customer_quotes__customer-box, section#price #price__container #price__col2 {
     width: 33.33333%;
   }
-  .col-md-5, section#what_is #what_is__container #what_is__text {
+  .col-md-5 {
     width: 41.66667%;
   }
-  .col-md-6, section#about_perdoo #about__container div, section#price_header #price_header__container div, section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
+  .col-md-6, section#what_is #what_is__image, section#what_is #what_is__container #what_is__text, section#about_perdoo #about__container div, section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2, section#price_header #price_header__container div {
     width: 50%;
   }
   .col-md-7 {
@@ -913,7 +913,7 @@ hr {
   .col-md-offset-6 {
     margin-left: 50%;
   }
-  .col-md-offset-7, section#what_is #what_is__container #what_is__text {
+  .col-md-offset-7 {
     margin-left: 58.33333%;
   }
   .col-md-offset-8 {
@@ -2289,25 +2289,25 @@ tbody.collapse.in, header nav tbody.in#header-navigation {
   }
 }
 
-.container > .navbar-header, header nav > .navbar-header, section#customer_quotes > .navbar-header, section#need_perdoo #neeed_perdoo__container > .navbar-header, section#what_is #what_is__container > .navbar-header, section#impressum #impressum__container > .navbar-header, section#terms #terms__container > .navbar-header, section#ready #ready__container > .navbar-header, section#about_perdoo #about__container > .navbar-header, section#price_header #price_header__container > .navbar-header, section#price #price__container > .navbar-header, section#founders_perdoo #founders__container > .navbar-header, footer section#footer-row1 #footer-row1__container > .navbar-header, footer section#footer-row2 #footer-row2__container > .navbar-header, header nav .container > #header-branding, header nav > #header-branding, header nav section#customer_quotes > #header-branding, section#need_perdoo header nav #neeed_perdoo__container > #header-branding, header nav section#need_perdoo #neeed_perdoo__container > #header-branding, section#what_is header nav #what_is__container > #header-branding, header nav section#what_is #what_is__container > #header-branding, section#impressum header nav #impressum__container > #header-branding, header nav section#impressum #impressum__container > #header-branding, section#terms header nav #terms__container > #header-branding, header nav section#terms #terms__container > #header-branding, section#ready header nav #ready__container > #header-branding, header nav section#ready #ready__container > #header-branding, section#about_perdoo header nav #about__container > #header-branding, header nav section#about_perdoo #about__container > #header-branding, section#price_header header nav #price_header__container > #header-branding, header nav section#price_header #price_header__container > #header-branding, section#price header nav #price__container > #header-branding, header nav section#price #price__container > #header-branding, section#founders_perdoo header nav #founders__container > #header-branding, header nav section#founders_perdoo #founders__container > #header-branding, footer section#footer-row1 header nav #footer-row1__container > #header-branding, header nav footer section#footer-row1 #footer-row1__container > #header-branding, footer section#footer-row2 header nav #footer-row2__container > #header-branding, header nav footer section#footer-row2 #footer-row2__container > #header-branding,
-.container > .navbar-collapse, header nav > .navbar-collapse, section#customer_quotes > .navbar-collapse, section#need_perdoo #neeed_perdoo__container > .navbar-collapse, section#what_is #what_is__container > .navbar-collapse, section#impressum #impressum__container > .navbar-collapse, section#terms #terms__container > .navbar-collapse, section#ready #ready__container > .navbar-collapse, section#about_perdoo #about__container > .navbar-collapse, section#price_header #price_header__container > .navbar-collapse, section#price #price__container > .navbar-collapse, section#founders_perdoo #founders__container > .navbar-collapse, footer section#footer-row1 #footer-row1__container > .navbar-collapse, footer section#footer-row2 #footer-row2__container > .navbar-collapse, header nav
-.container > #header-navigation, header nav > #header-navigation, header nav section#customer_quotes > #header-navigation, section#need_perdoo header nav #neeed_perdoo__container > #header-navigation, header nav section#need_perdoo #neeed_perdoo__container > #header-navigation, section#what_is header nav #what_is__container > #header-navigation, header nav section#what_is #what_is__container > #header-navigation, section#impressum header nav #impressum__container > #header-navigation, header nav section#impressum #impressum__container > #header-navigation, section#terms header nav #terms__container > #header-navigation, header nav section#terms #terms__container > #header-navigation, section#ready header nav #ready__container > #header-navigation, header nav section#ready #ready__container > #header-navigation, section#about_perdoo header nav #about__container > #header-navigation, header nav section#about_perdoo #about__container > #header-navigation, section#price_header header nav #price_header__container > #header-navigation, header nav section#price_header #price_header__container > #header-navigation, section#price header nav #price__container > #header-navigation, header nav section#price #price__container > #header-navigation, section#founders_perdoo header nav #founders__container > #header-navigation, header nav section#founders_perdoo #founders__container > #header-navigation, footer section#footer-row1 header nav #footer-row1__container > #header-navigation, header nav footer section#footer-row1 #footer-row1__container > #header-navigation, footer section#footer-row2 header nav #footer-row2__container > #header-navigation, header nav footer section#footer-row2 #footer-row2__container > #header-navigation,
-.container-fluid > .navbar-header, section#main-hero > .navbar-header, section#need_perdoo > .navbar-header, section#what_is > .navbar-header, section#impressum > .navbar-header, section#terms > .navbar-header, section#ready > .navbar-header, section#about_perdoo > .navbar-header, section#price_header > .navbar-header, section#price > .navbar-header, section#founders_perdoo > .navbar-header, section#get-to-know > .navbar-header, footer > .navbar-header, header nav
-.container-fluid > #header-branding, header nav section#main-hero > #header-branding, header nav section#need_perdoo > #header-branding, header nav section#what_is > #header-branding, header nav section#impressum > #header-branding, header nav section#terms > #header-branding, header nav section#ready > #header-branding, header nav section#about_perdoo > #header-branding, header nav section#price_header > #header-branding, header nav section#price > #header-branding, header nav section#founders_perdoo > #header-branding, header nav section#get-to-know > #header-branding, header nav footer > #header-branding,
-.container-fluid > .navbar-collapse, section#main-hero > .navbar-collapse, section#need_perdoo > .navbar-collapse, section#what_is > .navbar-collapse, section#impressum > .navbar-collapse, section#terms > .navbar-collapse, section#ready > .navbar-collapse, section#about_perdoo > .navbar-collapse, section#price_header > .navbar-collapse, section#price > .navbar-collapse, section#founders_perdoo > .navbar-collapse, section#get-to-know > .navbar-collapse, footer > .navbar-collapse, header nav
-.container-fluid > #header-navigation, header nav section#main-hero > #header-navigation, header nav section#need_perdoo > #header-navigation, header nav section#what_is > #header-navigation, header nav section#impressum > #header-navigation, header nav section#terms > #header-navigation, header nav section#ready > #header-navigation, header nav section#about_perdoo > #header-navigation, header nav section#price_header > #header-navigation, header nav section#price > #header-navigation, header nav section#founders_perdoo > #header-navigation, header nav section#get-to-know > #header-navigation, header nav footer > #header-navigation {
+.container > .navbar-header, header nav > .navbar-header, section#customer_quotes > .navbar-header, section#need_perdoo #neeed_perdoo__container > .navbar-header, section#what_is #what_is__container > .navbar-header, section#ready #ready__container > .navbar-header, section#impressum #impressum__container > .navbar-header, section#terms #terms__container > .navbar-header, section#about_perdoo #about__container > .navbar-header, section#founders_perdoo #founders__container > .navbar-header, section#price_header #price_header__container > .navbar-header, section#price #price__container > .navbar-header, footer section#footer-row1 #footer-row1__container > .navbar-header, footer section#footer-row2 #footer-row2__container > .navbar-header, header nav .container > #header-branding, header nav > #header-branding, header nav section#customer_quotes > #header-branding, section#need_perdoo header nav #neeed_perdoo__container > #header-branding, header nav section#need_perdoo #neeed_perdoo__container > #header-branding, section#what_is header nav #what_is__container > #header-branding, header nav section#what_is #what_is__container > #header-branding, section#ready header nav #ready__container > #header-branding, header nav section#ready #ready__container > #header-branding, section#impressum header nav #impressum__container > #header-branding, header nav section#impressum #impressum__container > #header-branding, section#terms header nav #terms__container > #header-branding, header nav section#terms #terms__container > #header-branding, section#about_perdoo header nav #about__container > #header-branding, header nav section#about_perdoo #about__container > #header-branding, section#founders_perdoo header nav #founders__container > #header-branding, header nav section#founders_perdoo #founders__container > #header-branding, section#price_header header nav #price_header__container > #header-branding, header nav section#price_header #price_header__container > #header-branding, section#price header nav #price__container > #header-branding, header nav section#price #price__container > #header-branding, footer section#footer-row1 header nav #footer-row1__container > #header-branding, header nav footer section#footer-row1 #footer-row1__container > #header-branding, footer section#footer-row2 header nav #footer-row2__container > #header-branding, header nav footer section#footer-row2 #footer-row2__container > #header-branding,
+.container > .navbar-collapse, header nav > .navbar-collapse, section#customer_quotes > .navbar-collapse, section#need_perdoo #neeed_perdoo__container > .navbar-collapse, section#what_is #what_is__container > .navbar-collapse, section#ready #ready__container > .navbar-collapse, section#impressum #impressum__container > .navbar-collapse, section#terms #terms__container > .navbar-collapse, section#about_perdoo #about__container > .navbar-collapse, section#founders_perdoo #founders__container > .navbar-collapse, section#price_header #price_header__container > .navbar-collapse, section#price #price__container > .navbar-collapse, footer section#footer-row1 #footer-row1__container > .navbar-collapse, footer section#footer-row2 #footer-row2__container > .navbar-collapse, header nav
+.container > #header-navigation, header nav > #header-navigation, header nav section#customer_quotes > #header-navigation, section#need_perdoo header nav #neeed_perdoo__container > #header-navigation, header nav section#need_perdoo #neeed_perdoo__container > #header-navigation, section#what_is header nav #what_is__container > #header-navigation, header nav section#what_is #what_is__container > #header-navigation, section#ready header nav #ready__container > #header-navigation, header nav section#ready #ready__container > #header-navigation, section#impressum header nav #impressum__container > #header-navigation, header nav section#impressum #impressum__container > #header-navigation, section#terms header nav #terms__container > #header-navigation, header nav section#terms #terms__container > #header-navigation, section#about_perdoo header nav #about__container > #header-navigation, header nav section#about_perdoo #about__container > #header-navigation, section#founders_perdoo header nav #founders__container > #header-navigation, header nav section#founders_perdoo #founders__container > #header-navigation, section#price_header header nav #price_header__container > #header-navigation, header nav section#price_header #price_header__container > #header-navigation, section#price header nav #price__container > #header-navigation, header nav section#price #price__container > #header-navigation, footer section#footer-row1 header nav #footer-row1__container > #header-navigation, header nav footer section#footer-row1 #footer-row1__container > #header-navigation, footer section#footer-row2 header nav #footer-row2__container > #header-navigation, header nav footer section#footer-row2 #footer-row2__container > #header-navigation,
+.container-fluid > .navbar-header, section#main-hero > .navbar-header, section#need_perdoo > .navbar-header, section#what_is > .navbar-header, section#ready > .navbar-header, section#impressum > .navbar-header, section#terms > .navbar-header, section#about_perdoo > .navbar-header, section#founders_perdoo > .navbar-header, section#price_header > .navbar-header, section#price > .navbar-header, section#get-to-know > .navbar-header, footer > .navbar-header, header nav
+.container-fluid > #header-branding, header nav section#main-hero > #header-branding, header nav section#need_perdoo > #header-branding, header nav section#what_is > #header-branding, header nav section#ready > #header-branding, header nav section#impressum > #header-branding, header nav section#terms > #header-branding, header nav section#about_perdoo > #header-branding, header nav section#founders_perdoo > #header-branding, header nav section#price_header > #header-branding, header nav section#price > #header-branding, header nav section#get-to-know > #header-branding, header nav footer > #header-branding,
+.container-fluid > .navbar-collapse, section#main-hero > .navbar-collapse, section#need_perdoo > .navbar-collapse, section#what_is > .navbar-collapse, section#ready > .navbar-collapse, section#impressum > .navbar-collapse, section#terms > .navbar-collapse, section#about_perdoo > .navbar-collapse, section#founders_perdoo > .navbar-collapse, section#price_header > .navbar-collapse, section#price > .navbar-collapse, section#get-to-know > .navbar-collapse, footer > .navbar-collapse, header nav
+.container-fluid > #header-navigation, header nav section#main-hero > #header-navigation, header nav section#need_perdoo > #header-navigation, header nav section#what_is > #header-navigation, header nav section#ready > #header-navigation, header nav section#impressum > #header-navigation, header nav section#terms > #header-navigation, header nav section#about_perdoo > #header-navigation, header nav section#founders_perdoo > #header-navigation, header nav section#price_header > #header-navigation, header nav section#price > #header-navigation, header nav section#get-to-know > #header-navigation, header nav footer > #header-navigation {
   margin-right: -15px;
   margin-left: -15px;
 }
 
 @media (min-width: 768px) {
-  .container > .navbar-header, header nav > .navbar-header, section#customer_quotes > .navbar-header, section#need_perdoo #neeed_perdoo__container > .navbar-header, section#what_is #what_is__container > .navbar-header, section#impressum #impressum__container > .navbar-header, section#terms #terms__container > .navbar-header, section#ready #ready__container > .navbar-header, section#about_perdoo #about__container > .navbar-header, section#price_header #price_header__container > .navbar-header, section#price #price__container > .navbar-header, section#founders_perdoo #founders__container > .navbar-header, footer section#footer-row1 #footer-row1__container > .navbar-header, footer section#footer-row2 #footer-row2__container > .navbar-header, header nav .container > #header-branding, header nav > #header-branding, header nav section#customer_quotes > #header-branding, section#need_perdoo header nav #neeed_perdoo__container > #header-branding, header nav section#need_perdoo #neeed_perdoo__container > #header-branding, section#what_is header nav #what_is__container > #header-branding, header nav section#what_is #what_is__container > #header-branding, section#impressum header nav #impressum__container > #header-branding, header nav section#impressum #impressum__container > #header-branding, section#terms header nav #terms__container > #header-branding, header nav section#terms #terms__container > #header-branding, section#ready header nav #ready__container > #header-branding, header nav section#ready #ready__container > #header-branding, section#about_perdoo header nav #about__container > #header-branding, header nav section#about_perdoo #about__container > #header-branding, section#price_header header nav #price_header__container > #header-branding, header nav section#price_header #price_header__container > #header-branding, section#price header nav #price__container > #header-branding, header nav section#price #price__container > #header-branding, section#founders_perdoo header nav #founders__container > #header-branding, header nav section#founders_perdoo #founders__container > #header-branding, footer section#footer-row1 header nav #footer-row1__container > #header-branding, header nav footer section#footer-row1 #footer-row1__container > #header-branding, footer section#footer-row2 header nav #footer-row2__container > #header-branding, header nav footer section#footer-row2 #footer-row2__container > #header-branding,
-  .container > .navbar-collapse, header nav > .navbar-collapse, section#customer_quotes > .navbar-collapse, section#need_perdoo #neeed_perdoo__container > .navbar-collapse, section#what_is #what_is__container > .navbar-collapse, section#impressum #impressum__container > .navbar-collapse, section#terms #terms__container > .navbar-collapse, section#ready #ready__container > .navbar-collapse, section#about_perdoo #about__container > .navbar-collapse, section#price_header #price_header__container > .navbar-collapse, section#price #price__container > .navbar-collapse, section#founders_perdoo #founders__container > .navbar-collapse, footer section#footer-row1 #footer-row1__container > .navbar-collapse, footer section#footer-row2 #footer-row2__container > .navbar-collapse, header nav
-  .container > #header-navigation, header nav > #header-navigation, header nav section#customer_quotes > #header-navigation, section#need_perdoo header nav #neeed_perdoo__container > #header-navigation, header nav section#need_perdoo #neeed_perdoo__container > #header-navigation, section#what_is header nav #what_is__container > #header-navigation, header nav section#what_is #what_is__container > #header-navigation, section#impressum header nav #impressum__container > #header-navigation, header nav section#impressum #impressum__container > #header-navigation, section#terms header nav #terms__container > #header-navigation, header nav section#terms #terms__container > #header-navigation, section#ready header nav #ready__container > #header-navigation, header nav section#ready #ready__container > #header-navigation, section#about_perdoo header nav #about__container > #header-navigation, header nav section#about_perdoo #about__container > #header-navigation, section#price_header header nav #price_header__container > #header-navigation, header nav section#price_header #price_header__container > #header-navigation, section#price header nav #price__container > #header-navigation, header nav section#price #price__container > #header-navigation, section#founders_perdoo header nav #founders__container > #header-navigation, header nav section#founders_perdoo #founders__container > #header-navigation, footer section#footer-row1 header nav #footer-row1__container > #header-navigation, header nav footer section#footer-row1 #footer-row1__container > #header-navigation, footer section#footer-row2 header nav #footer-row2__container > #header-navigation, header nav footer section#footer-row2 #footer-row2__container > #header-navigation,
-  .container-fluid > .navbar-header, section#main-hero > .navbar-header, section#need_perdoo > .navbar-header, section#what_is > .navbar-header, section#impressum > .navbar-header, section#terms > .navbar-header, section#ready > .navbar-header, section#about_perdoo > .navbar-header, section#price_header > .navbar-header, section#price > .navbar-header, section#founders_perdoo > .navbar-header, section#get-to-know > .navbar-header, footer > .navbar-header, header nav
-  .container-fluid > #header-branding, header nav section#main-hero > #header-branding, header nav section#need_perdoo > #header-branding, header nav section#what_is > #header-branding, header nav section#impressum > #header-branding, header nav section#terms > #header-branding, header nav section#ready > #header-branding, header nav section#about_perdoo > #header-branding, header nav section#price_header > #header-branding, header nav section#price > #header-branding, header nav section#founders_perdoo > #header-branding, header nav section#get-to-know > #header-branding, header nav footer > #header-branding,
-  .container-fluid > .navbar-collapse, section#main-hero > .navbar-collapse, section#need_perdoo > .navbar-collapse, section#what_is > .navbar-collapse, section#impressum > .navbar-collapse, section#terms > .navbar-collapse, section#ready > .navbar-collapse, section#about_perdoo > .navbar-collapse, section#price_header > .navbar-collapse, section#price > .navbar-collapse, section#founders_perdoo > .navbar-collapse, section#get-to-know > .navbar-collapse, footer > .navbar-collapse, header nav
-  .container-fluid > #header-navigation, header nav section#main-hero > #header-navigation, header nav section#need_perdoo > #header-navigation, header nav section#what_is > #header-navigation, header nav section#impressum > #header-navigation, header nav section#terms > #header-navigation, header nav section#ready > #header-navigation, header nav section#about_perdoo > #header-navigation, header nav section#price_header > #header-navigation, header nav section#price > #header-navigation, header nav section#founders_perdoo > #header-navigation, header nav section#get-to-know > #header-navigation, header nav footer > #header-navigation {
+  .container > .navbar-header, header nav > .navbar-header, section#customer_quotes > .navbar-header, section#need_perdoo #neeed_perdoo__container > .navbar-header, section#what_is #what_is__container > .navbar-header, section#ready #ready__container > .navbar-header, section#impressum #impressum__container > .navbar-header, section#terms #terms__container > .navbar-header, section#about_perdoo #about__container > .navbar-header, section#founders_perdoo #founders__container > .navbar-header, section#price_header #price_header__container > .navbar-header, section#price #price__container > .navbar-header, footer section#footer-row1 #footer-row1__container > .navbar-header, footer section#footer-row2 #footer-row2__container > .navbar-header, header nav .container > #header-branding, header nav > #header-branding, header nav section#customer_quotes > #header-branding, section#need_perdoo header nav #neeed_perdoo__container > #header-branding, header nav section#need_perdoo #neeed_perdoo__container > #header-branding, section#what_is header nav #what_is__container > #header-branding, header nav section#what_is #what_is__container > #header-branding, section#ready header nav #ready__container > #header-branding, header nav section#ready #ready__container > #header-branding, section#impressum header nav #impressum__container > #header-branding, header nav section#impressum #impressum__container > #header-branding, section#terms header nav #terms__container > #header-branding, header nav section#terms #terms__container > #header-branding, section#about_perdoo header nav #about__container > #header-branding, header nav section#about_perdoo #about__container > #header-branding, section#founders_perdoo header nav #founders__container > #header-branding, header nav section#founders_perdoo #founders__container > #header-branding, section#price_header header nav #price_header__container > #header-branding, header nav section#price_header #price_header__container > #header-branding, section#price header nav #price__container > #header-branding, header nav section#price #price__container > #header-branding, footer section#footer-row1 header nav #footer-row1__container > #header-branding, header nav footer section#footer-row1 #footer-row1__container > #header-branding, footer section#footer-row2 header nav #footer-row2__container > #header-branding, header nav footer section#footer-row2 #footer-row2__container > #header-branding,
+  .container > .navbar-collapse, header nav > .navbar-collapse, section#customer_quotes > .navbar-collapse, section#need_perdoo #neeed_perdoo__container > .navbar-collapse, section#what_is #what_is__container > .navbar-collapse, section#ready #ready__container > .navbar-collapse, section#impressum #impressum__container > .navbar-collapse, section#terms #terms__container > .navbar-collapse, section#about_perdoo #about__container > .navbar-collapse, section#founders_perdoo #founders__container > .navbar-collapse, section#price_header #price_header__container > .navbar-collapse, section#price #price__container > .navbar-collapse, footer section#footer-row1 #footer-row1__container > .navbar-collapse, footer section#footer-row2 #footer-row2__container > .navbar-collapse, header nav
+  .container > #header-navigation, header nav > #header-navigation, header nav section#customer_quotes > #header-navigation, section#need_perdoo header nav #neeed_perdoo__container > #header-navigation, header nav section#need_perdoo #neeed_perdoo__container > #header-navigation, section#what_is header nav #what_is__container > #header-navigation, header nav section#what_is #what_is__container > #header-navigation, section#ready header nav #ready__container > #header-navigation, header nav section#ready #ready__container > #header-navigation, section#impressum header nav #impressum__container > #header-navigation, header nav section#impressum #impressum__container > #header-navigation, section#terms header nav #terms__container > #header-navigation, header nav section#terms #terms__container > #header-navigation, section#about_perdoo header nav #about__container > #header-navigation, header nav section#about_perdoo #about__container > #header-navigation, section#founders_perdoo header nav #founders__container > #header-navigation, header nav section#founders_perdoo #founders__container > #header-navigation, section#price_header header nav #price_header__container > #header-navigation, header nav section#price_header #price_header__container > #header-navigation, section#price header nav #price__container > #header-navigation, header nav section#price #price__container > #header-navigation, footer section#footer-row1 header nav #footer-row1__container > #header-navigation, header nav footer section#footer-row1 #footer-row1__container > #header-navigation, footer section#footer-row2 header nav #footer-row2__container > #header-navigation, header nav footer section#footer-row2 #footer-row2__container > #header-navigation,
+  .container-fluid > .navbar-header, section#main-hero > .navbar-header, section#need_perdoo > .navbar-header, section#what_is > .navbar-header, section#ready > .navbar-header, section#impressum > .navbar-header, section#terms > .navbar-header, section#about_perdoo > .navbar-header, section#founders_perdoo > .navbar-header, section#price_header > .navbar-header, section#price > .navbar-header, section#get-to-know > .navbar-header, footer > .navbar-header, header nav
+  .container-fluid > #header-branding, header nav section#main-hero > #header-branding, header nav section#need_perdoo > #header-branding, header nav section#what_is > #header-branding, header nav section#ready > #header-branding, header nav section#impressum > #header-branding, header nav section#terms > #header-branding, header nav section#about_perdoo > #header-branding, header nav section#founders_perdoo > #header-branding, header nav section#price_header > #header-branding, header nav section#price > #header-branding, header nav section#get-to-know > #header-branding, header nav footer > #header-branding,
+  .container-fluid > .navbar-collapse, section#main-hero > .navbar-collapse, section#need_perdoo > .navbar-collapse, section#what_is > .navbar-collapse, section#ready > .navbar-collapse, section#impressum > .navbar-collapse, section#terms > .navbar-collapse, section#about_perdoo > .navbar-collapse, section#founders_perdoo > .navbar-collapse, section#price_header > .navbar-collapse, section#price > .navbar-collapse, section#get-to-know > .navbar-collapse, footer > .navbar-collapse, header nav
+  .container-fluid > #header-navigation, header nav section#main-hero > #header-navigation, header nav section#need_perdoo > #header-navigation, header nav section#what_is > #header-navigation, header nav section#ready > #header-navigation, header nav section#impressum > #header-navigation, header nav section#terms > #header-navigation, header nav section#about_perdoo > #header-navigation, header nav section#founders_perdoo > #header-navigation, header nav section#price_header > #header-navigation, header nav section#price > #header-navigation, header nav section#get-to-know > #header-navigation, header nav footer > #header-navigation {
     margin-right: 0;
     margin-left: 0;
   }
@@ -2367,18 +2367,18 @@ tbody.collapse.in, header nav tbody.in#header-navigation {
 }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand, header > .container .navbar-brand, header .navbar > nav .navbar-brand, header > nav .navbar-brand, .navbar > section#customer_quotes .navbar-brand, header > section#customer_quotes .navbar-brand, section#need_perdoo .navbar > #neeed_perdoo__container .navbar-brand, section#need_perdoo header > #neeed_perdoo__container .navbar-brand, section#what_is .navbar > #what_is__container .navbar-brand, section#what_is header > #what_is__container .navbar-brand, section#impressum .navbar > #impressum__container .navbar-brand, section#impressum header > #impressum__container .navbar-brand, section#terms .navbar > #terms__container .navbar-brand, section#terms header > #terms__container .navbar-brand, section#ready .navbar > #ready__container .navbar-brand, section#ready header > #ready__container .navbar-brand, section#about_perdoo .navbar > #about__container .navbar-brand, section#about_perdoo header > #about__container .navbar-brand, section#price_header .navbar > #price_header__container .navbar-brand, section#price_header header > #price_header__container .navbar-brand, section#price .navbar > #price__container .navbar-brand, section#price header > #price__container .navbar-brand, section#founders_perdoo .navbar > #founders__container .navbar-brand, section#founders_perdoo header > #founders__container .navbar-brand, footer section#footer-row1 .navbar > #footer-row1__container .navbar-brand, footer section#footer-row1 header > #footer-row1__container .navbar-brand, footer section#footer-row2 .navbar > #footer-row2__container .navbar-brand, footer section#footer-row2 header > #footer-row2__container .navbar-brand, .navbar > .container header nav #header-branding a, header nav #header-branding .navbar > .container a, header > .container nav #header-branding a, header .navbar > nav #header-branding a, header > nav nav #header-branding a, .navbar > section#customer_quotes header nav #header-branding a, header nav #header-branding .navbar > section#customer_quotes a, header > section#customer_quotes nav #header-branding a, section#need_perdoo .navbar > #neeed_perdoo__container header nav #header-branding a, header nav #header-branding section#need_perdoo .navbar > #neeed_perdoo__container a, section#need_perdoo header > #neeed_perdoo__container nav #header-branding a, section#what_is .navbar > #what_is__container header nav #header-branding a, header nav #header-branding section#what_is .navbar > #what_is__container a, section#what_is header > #what_is__container nav #header-branding a, section#impressum .navbar > #impressum__container header nav #header-branding a, header nav #header-branding section#impressum .navbar > #impressum__container a, section#impressum header > #impressum__container nav #header-branding a, section#terms .navbar > #terms__container header nav #header-branding a, header nav #header-branding section#terms .navbar > #terms__container a, section#terms header > #terms__container nav #header-branding a, section#ready .navbar > #ready__container header nav #header-branding a, header nav #header-branding section#ready .navbar > #ready__container a, section#ready header > #ready__container nav #header-branding a, section#about_perdoo .navbar > #about__container header nav #header-branding a, header nav #header-branding section#about_perdoo .navbar > #about__container a, section#about_perdoo header > #about__container nav #header-branding a, section#price_header .navbar > #price_header__container header nav #header-branding a, header nav #header-branding section#price_header .navbar > #price_header__container a, section#price_header header > #price_header__container nav #header-branding a, section#price .navbar > #price__container header nav #header-branding a, header nav #header-branding section#price .navbar > #price__container a, section#price header > #price__container nav #header-branding a, section#founders_perdoo .navbar > #founders__container header nav #header-branding a, header nav #header-branding section#founders_perdoo .navbar > #founders__container a, section#founders_perdoo header > #founders__container nav #header-branding a, footer section#footer-row1 .navbar > #footer-row1__container header nav #header-branding a, header nav #header-branding footer section#footer-row1 .navbar > #footer-row1__container a, footer section#footer-row1 header > #footer-row1__container nav #header-branding a, footer section#footer-row2 .navbar > #footer-row2__container header nav #header-branding a, header nav #header-branding footer section#footer-row2 .navbar > #footer-row2__container a, footer section#footer-row2 header > #footer-row2__container nav #header-branding a,
+  .navbar > .container .navbar-brand, header > .container .navbar-brand, header .navbar > nav .navbar-brand, header > nav .navbar-brand, .navbar > section#customer_quotes .navbar-brand, header > section#customer_quotes .navbar-brand, section#need_perdoo .navbar > #neeed_perdoo__container .navbar-brand, section#need_perdoo header > #neeed_perdoo__container .navbar-brand, section#what_is .navbar > #what_is__container .navbar-brand, section#what_is header > #what_is__container .navbar-brand, section#ready .navbar > #ready__container .navbar-brand, section#ready header > #ready__container .navbar-brand, section#impressum .navbar > #impressum__container .navbar-brand, section#impressum header > #impressum__container .navbar-brand, section#terms .navbar > #terms__container .navbar-brand, section#terms header > #terms__container .navbar-brand, section#about_perdoo .navbar > #about__container .navbar-brand, section#about_perdoo header > #about__container .navbar-brand, section#founders_perdoo .navbar > #founders__container .navbar-brand, section#founders_perdoo header > #founders__container .navbar-brand, section#price_header .navbar > #price_header__container .navbar-brand, section#price_header header > #price_header__container .navbar-brand, section#price .navbar > #price__container .navbar-brand, section#price header > #price__container .navbar-brand, footer section#footer-row1 .navbar > #footer-row1__container .navbar-brand, footer section#footer-row1 header > #footer-row1__container .navbar-brand, footer section#footer-row2 .navbar > #footer-row2__container .navbar-brand, footer section#footer-row2 header > #footer-row2__container .navbar-brand, .navbar > .container header nav #header-branding a, header nav #header-branding .navbar > .container a, header > .container nav #header-branding a, header .navbar > nav #header-branding a, header > nav nav #header-branding a, .navbar > section#customer_quotes header nav #header-branding a, header nav #header-branding .navbar > section#customer_quotes a, header > section#customer_quotes nav #header-branding a, section#need_perdoo .navbar > #neeed_perdoo__container header nav #header-branding a, header nav #header-branding section#need_perdoo .navbar > #neeed_perdoo__container a, section#need_perdoo header > #neeed_perdoo__container nav #header-branding a, section#what_is .navbar > #what_is__container header nav #header-branding a, header nav #header-branding section#what_is .navbar > #what_is__container a, section#what_is header > #what_is__container nav #header-branding a, section#ready .navbar > #ready__container header nav #header-branding a, header nav #header-branding section#ready .navbar > #ready__container a, section#ready header > #ready__container nav #header-branding a, section#impressum .navbar > #impressum__container header nav #header-branding a, header nav #header-branding section#impressum .navbar > #impressum__container a, section#impressum header > #impressum__container nav #header-branding a, section#terms .navbar > #terms__container header nav #header-branding a, header nav #header-branding section#terms .navbar > #terms__container a, section#terms header > #terms__container nav #header-branding a, section#about_perdoo .navbar > #about__container header nav #header-branding a, header nav #header-branding section#about_perdoo .navbar > #about__container a, section#about_perdoo header > #about__container nav #header-branding a, section#founders_perdoo .navbar > #founders__container header nav #header-branding a, header nav #header-branding section#founders_perdoo .navbar > #founders__container a, section#founders_perdoo header > #founders__container nav #header-branding a, section#price_header .navbar > #price_header__container header nav #header-branding a, header nav #header-branding section#price_header .navbar > #price_header__container a, section#price_header header > #price_header__container nav #header-branding a, section#price .navbar > #price__container header nav #header-branding a, header nav #header-branding section#price .navbar > #price__container a, section#price header > #price__container nav #header-branding a, footer section#footer-row1 .navbar > #footer-row1__container header nav #header-branding a, header nav #header-branding footer section#footer-row1 .navbar > #footer-row1__container a, footer section#footer-row1 header > #footer-row1__container nav #header-branding a, footer section#footer-row2 .navbar > #footer-row2__container header nav #header-branding a, header nav #header-branding footer section#footer-row2 .navbar > #footer-row2__container a, footer section#footer-row2 header > #footer-row2__container nav #header-branding a,
   .navbar > .container-fluid .navbar-brand, header > .container-fluid .navbar-brand,
   .navbar > section#main-hero .navbar-brand, header > section#main-hero .navbar-brand,
   .navbar > section#need_perdoo .navbar-brand, header > section#need_perdoo .navbar-brand,
   .navbar > section#what_is .navbar-brand, header > section#what_is .navbar-brand,
+  .navbar > section#ready .navbar-brand, header > section#ready .navbar-brand,
   .navbar > section#impressum .navbar-brand, header > section#impressum .navbar-brand,
   .navbar > section#terms .navbar-brand, header > section#terms .navbar-brand,
-  .navbar > section#ready .navbar-brand, header > section#ready .navbar-brand,
   .navbar > section#about_perdoo .navbar-brand, header > section#about_perdoo .navbar-brand,
+  .navbar > section#founders_perdoo .navbar-brand, header > section#founders_perdoo .navbar-brand,
   .navbar > section#price_header .navbar-brand, header > section#price_header .navbar-brand,
   .navbar > section#price .navbar-brand, header > section#price .navbar-brand,
-  .navbar > section#founders_perdoo .navbar-brand, header > section#founders_perdoo .navbar-brand,
   .navbar > section#get-to-know .navbar-brand, header > section#get-to-know .navbar-brand,
   .navbar > footer .navbar-brand, header > footer .navbar-brand,
   .navbar > .container-fluid header nav #header-branding a, header nav #header-branding
@@ -2389,20 +2389,20 @@ tbody.collapse.in, header nav tbody.in#header-navigation {
   .navbar > section#need_perdoo a, header > section#need_perdoo nav #header-branding a,
   .navbar > section#what_is header nav #header-branding a, header nav #header-branding
   .navbar > section#what_is a, header > section#what_is nav #header-branding a,
+  .navbar > section#ready header nav #header-branding a, header nav #header-branding
+  .navbar > section#ready a, header > section#ready nav #header-branding a,
   .navbar > section#impressum header nav #header-branding a, header nav #header-branding
   .navbar > section#impressum a, header > section#impressum nav #header-branding a,
   .navbar > section#terms header nav #header-branding a, header nav #header-branding
   .navbar > section#terms a, header > section#terms nav #header-branding a,
-  .navbar > section#ready header nav #header-branding a, header nav #header-branding
-  .navbar > section#ready a, header > section#ready nav #header-branding a,
   .navbar > section#about_perdoo header nav #header-branding a, header nav #header-branding
   .navbar > section#about_perdoo a, header > section#about_perdoo nav #header-branding a,
+  .navbar > section#founders_perdoo header nav #header-branding a, header nav #header-branding
+  .navbar > section#founders_perdoo a, header > section#founders_perdoo nav #header-branding a,
   .navbar > section#price_header header nav #header-branding a, header nav #header-branding
   .navbar > section#price_header a, header > section#price_header nav #header-branding a,
   .navbar > section#price header nav #header-branding a, header nav #header-branding
   .navbar > section#price a, header > section#price nav #header-branding a,
-  .navbar > section#founders_perdoo header nav #header-branding a, header nav #header-branding
-  .navbar > section#founders_perdoo a, header > section#founders_perdoo nav #header-branding a,
   .navbar > section#get-to-know header nav #header-branding a, header nav #header-branding
   .navbar > section#get-to-know a, header > section#get-to-know nav #header-branding a,
   .navbar > footer header nav #header-branding a, header nav #header-branding
@@ -3834,13 +3834,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
   margin: 0;
   padding: 0;
 }
 
-.contaniner, .container-fluid, section#main-hero, section#need_perdoo, section#what_is, section#impressum, section#terms, section#ready, section#about_perdoo, section#price_header, section#price, section#founders_perdoo, section#get-to-know, footer {
+.contaniner, .container-fluid, section#main-hero, section#need_perdoo, section#what_is, section#ready, section#impressum, section#terms, section#about_perdoo, section#founders_perdoo, section#price_header, section#price, section#get-to-know, footer {
   padding: 0;
   margin: 0;
 }
@@ -3850,7 +3849,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
   color: #5E5E5E;
 }
 
-a:hover {
+* a:link, * a:hover, * a:visited, * a:active {
   text-decoration: none;
 }
 
@@ -4156,7 +4155,7 @@ h6 {
   text-transform: uppercase;
 }
 
-.button-zoom-hover:hover, section#ready #ready__container .button:hover {
+.button-zoom-hover:hover, section#ready #ready__container .button:hover, section#price #price__container #price__col2 #price__col2_start .button:hover {
   transform: scale(1.1);
 }
 
@@ -4164,19 +4163,19 @@ h6 {
   text-decoration: none;
 }
 
-.button-outline-blue, header nav #header-navigation ul li .button {
+.button-outline-blue, header nav #header-navigation ul li .button, .header-bright .button {
   background: none;
-  border: 2px solid #059DDF;
+  border: 2px solid #059DDF !important;
 }
 
 .button-outline-white, .header-bright nav #header-navigation .button {
   background: none;
-  border: 2px solid white !important;
+  border: 2px solid white;
 }
 
 .button-outline-grey, footer section#footer-row1 #footer-row1__container .button {
   background: none;
-  border: 2px solid #767676 !important;
+  border: 2px solid #767676;
 }
 
 .button-fill-white, .header-bright nav #header-navigation .button:hover, section#ready #ready__container .button {
@@ -4395,7 +4394,7 @@ section#customer_quotes h6 {
 
 section#customer_quotes #customer_quotes__customers {
   display: flex;
-  margin-top: 6%;
+  margin-top: 40px;
 }
 
 @media all and (min-width: 0.0625em) and (max-width: 61.875em) {
@@ -4698,46 +4697,15 @@ section#need_perdoo #need_perdoo__text h4 strong {
 section#what_is {
   margin-top: 6%;
   padding-bottom: 6%;
-  position: relative;
-}
-
-section#what_is #what_is__image {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  position: absolute;
-  overflow: hidden;
-  min-width: 50vw;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-section#what_is #what_is__image:before, section#what_is #what_is__image:after {
-  content: none;
 }
 
 section#what_is #what_is__image img {
-  max-width: 50vw;
+  max-width: 95%;
 }
 
 @media all and (min-width: 0.0625em) and (max-width: 61.875em) {
-  section#what_is #what_is__image {
-    position: inherit;
-    justify-content: center;
-    order: 2;
-  }
   section#what_is #what_is__image img {
-    max-width: 80vw;
-    display: none;
-  }
-}
-
-@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
-  section#what_is #what_is__container {
-    flex-direction: column;
+    max-width: 100%;
   }
 }
 
@@ -4797,6 +4765,64 @@ section#what_is #what_is__container #what_is__text h6 {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
+section#ready {
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #059DDF;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.5 24.09c-.276 0-.5-.223-.5-.5 0-2.03.29-3.976 3.806-5.46.25-.105.547.012.655.267.11.254-.01.547-.26.655-3.2 1.35-3.2 2.97-3.2 4.54 0 .275-.22.5-.5.5z' fill='%231ea7e2'/%3E%3Cpath d='M.5 24.09c-.276 0-.5-.223-.5-.5s.224-.5.5-.5c1.568 0 3.19 0 4.54-3.194.107-.255.402-.373.654-.266.255.107.374.4.267.655C4.48 23.8 2.53 24.09.5 24.09zm4.5-10H1.5c-.19 0-.362-.106-.447-.275s-.067-.372.047-.524l3-4c.095-.12.243-.2.4-.2H8c.276 0 .5.23.5.5s-.224.5-.5.5H4.75l-2.25 3H5c.276 0 .5.23.5.5s-.224.5-.5.5z' fill='%231ea7e2'/%3E%3Cpath d='M9.5 20.09c-.096 0-.19-.026-.274-.08-.062-.042-1.514-1-2.58-2.065l-.5-.5c-1.065-1.065-2.023-2.518-2.063-2.58-.115-.174-.108-.402.016-.57C13.79 1.137 18.43.09 23.5.09c.276 0 .5.225.5.5 0 5.062-1.046 9.704-14.203 19.403-.088.065-.193.098-.297.098zm-2.146-2.853c.723.722 1.668 1.414 2.135 1.74 12.1-8.972 13.43-13.194 13.5-17.882-4.69.077-8.91 1.404-17.887 13.507.326.467 1.02 1.413 1.74 2.135l.5.5z' fill='%231ea7e2'/%3E%3Cpath d='M6.5 21.09c-.06 0-.116-.01-.173-.03-.036-.014-.904-.338-1.68-1.116l-.5-.5c-.777-.777-1.103-1.644-1.116-1.68-.05-.16-.03-.337.07-.473l1.5-2c.17-.22.48-.26.7-.1.22.17.27.48.1.7l-1.32 1.77c.13.26.388.69.78 1.088l.5.5c.397.395.826.646 1.085.776l1.76-1.33c.22-.164.535-.12.7.1.166.223.12.536-.1.7l-2 1.5c-.087.068-.193.1-.3.1zm4 2c-.076 0-.153-.017-.224-.052-.17-.085-.276-.258-.276-.447v-3.5c0-.27.224-.5.5-.5s.5.23.5.5v2.5l3-2.25v-3.25c0-.27.224-.5.5-.5s.5.23.5.5v3.5c0 .16-.074.31-.2.4l-4 3c-.088.07-.194.1-.3.1zm6-13c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5S19 6.214 19 7.59s-1.12 2.5-2.5 2.5zm0-4c-.827 0-1.5.674-1.5 1.5s.673 1.5 1.5 1.5 1.5-.67 1.5-1.5-.673-1.5-1.5-1.5z' fill='%231ea7e2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% 90%;
+}
+
+section#ready:before, section#ready:after {
+  content: none;
+}
+
+section#ready * {
+  text-align: center;
+  color: white;
+}
+
+section#ready #ready__container * {
+  display: block;
+}
+
+section#ready #ready__container h5 {
+  opacity: .6;
+  margin-top: .5em;
+}
+
+section#ready #ready__container .button {
+  margin-top: 2em;
+  display: inline-block;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+section#ready #ready__container .arrow {
+  display: block;
+}
+
+section#ready #ready__container .arrow:after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='17' height='21' viewBox='0 0 17 21' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.164 12.658l-5.868 5.056V.938C9.296.42 8.876 0 8.358 0S7.42.42 7.42.938v16.776l-5.87-5.056c-.392-.34-.985-.294-1.323.098-.338.393-.294.986.1 1.324L8.356 21l8.032-6.92c.392-.34.436-.93.097-1.324-.338-.392-.93-.437-1.323-.098z' fill='%23white' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+section#ready a {
+  color: #82ceef;
+}
+
+section#ready a:hover {
+  color: white;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
 @media (orientation: landscape) {
   section#impressum {
     padding-top: 20vh;
@@ -4824,6 +4850,10 @@ section#what_is #what_is__container #what_is__text h6 {
 section#impressum #impressum__container h1 {
   text-align: center;
   margin-bottom: 6%;
+}
+
+section#impressum #impressum__container .impressum__col1, section#impressum #impressum__container .impressum__col2 {
+  line-height: 34.875px !important;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -4897,64 +4927,6 @@ section#terms #terms__container div ul {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
-section#ready {
-  margin-top: 6%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  background-color: #059DDF;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.5 24.09c-.276 0-.5-.223-.5-.5 0-2.03.29-3.976 3.806-5.46.25-.105.547.012.655.267.11.254-.01.547-.26.655-3.2 1.35-3.2 2.97-3.2 4.54 0 .275-.22.5-.5.5z' fill='%231ea7e2'/%3E%3Cpath d='M.5 24.09c-.276 0-.5-.223-.5-.5s.224-.5.5-.5c1.568 0 3.19 0 4.54-3.194.107-.255.402-.373.654-.266.255.107.374.4.267.655C4.48 23.8 2.53 24.09.5 24.09zm4.5-10H1.5c-.19 0-.362-.106-.447-.275s-.067-.372.047-.524l3-4c.095-.12.243-.2.4-.2H8c.276 0 .5.23.5.5s-.224.5-.5.5H4.75l-2.25 3H5c.276 0 .5.23.5.5s-.224.5-.5.5z' fill='%231ea7e2'/%3E%3Cpath d='M9.5 20.09c-.096 0-.19-.026-.274-.08-.062-.042-1.514-1-2.58-2.065l-.5-.5c-1.065-1.065-2.023-2.518-2.063-2.58-.115-.174-.108-.402.016-.57C13.79 1.137 18.43.09 23.5.09c.276 0 .5.225.5.5 0 5.062-1.046 9.704-14.203 19.403-.088.065-.193.098-.297.098zm-2.146-2.853c.723.722 1.668 1.414 2.135 1.74 12.1-8.972 13.43-13.194 13.5-17.882-4.69.077-8.91 1.404-17.887 13.507.326.467 1.02 1.413 1.74 2.135l.5.5z' fill='%231ea7e2'/%3E%3Cpath d='M6.5 21.09c-.06 0-.116-.01-.173-.03-.036-.014-.904-.338-1.68-1.116l-.5-.5c-.777-.777-1.103-1.644-1.116-1.68-.05-.16-.03-.337.07-.473l1.5-2c.17-.22.48-.26.7-.1.22.17.27.48.1.7l-1.32 1.77c.13.26.388.69.78 1.088l.5.5c.397.395.826.646 1.085.776l1.76-1.33c.22-.164.535-.12.7.1.166.223.12.536-.1.7l-2 1.5c-.087.068-.193.1-.3.1zm4 2c-.076 0-.153-.017-.224-.052-.17-.085-.276-.258-.276-.447v-3.5c0-.27.224-.5.5-.5s.5.23.5.5v2.5l3-2.25v-3.25c0-.27.224-.5.5-.5s.5.23.5.5v3.5c0 .16-.074.31-.2.4l-4 3c-.088.07-.194.1-.3.1zm6-13c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5S19 6.214 19 7.59s-1.12 2.5-2.5 2.5zm0-4c-.827 0-1.5.674-1.5 1.5s.673 1.5 1.5 1.5 1.5-.67 1.5-1.5-.673-1.5-1.5-1.5z' fill='%231ea7e2'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 90% 90%;
-}
-
-section#ready:before, section#ready:after {
-  content: none;
-}
-
-section#ready * {
-  text-align: center;
-  color: white;
-}
-
-section#ready #ready__container * {
-  display: block;
-}
-
-section#ready #ready__container h5 {
-  opacity: .6;
-  margin-top: .5em;
-}
-
-section#ready #ready__container .button {
-  margin-top: 2em;
-  display: inline-block;
-  font-weight: bold;
-  font-weight: 600;
-}
-
-section#ready #ready__container .arrow {
-  display: block;
-}
-
-section#ready #ready__container .arrow:after {
-  content: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='17' height='21' viewBox='0 0 17 21' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.164 12.658l-5.868 5.056V.938C9.296.42 8.876 0 8.358 0S7.42.42 7.42.938v16.776l-5.87-5.056c-.392-.34-.985-.294-1.323.098-.338.393-.294.986.1 1.324L8.356 21l8.032-6.92c.392-.34.436-.93.097-1.324-.338-.392-.93-.437-1.323-.098z' fill='%23white' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-section#ready a {
-  color: #82ceef;
-}
-
-section#ready a:hover {
-  color: white;
-}
-
-/* ---------------------------------------------------------------------------------------------------------------- */
 section#about_perdoo {
   background-color: #059DDF;
   padding-top: 100px;
@@ -5019,6 +4991,116 @@ section#about_perdoo #about__container div h6 {
   font-weight: 700;
 }
 
+section#founders_perdoo {
+  margin-top: 3em;
+}
+
+section#founders_perdoo #founders__container {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  align-content: center;
+  line-height: 27px !important;
+  text-align: left;
+  padding: 3%;
+}
+
+section#founders_perdoo #founders__container .founders__col1:before, section#founders_perdoo #founders__container .founders__col1:after, section#founders_perdoo #founders__container .founders__col2:before, section#founders_perdoo #founders__container .founders__col2:after {
+  content: none;
+}
+
+@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
+  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.3px;
+    font-kerning: normal;
+  }
+}
+
+@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
+  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.3px;
+    font-kerning: normal;
+  }
+}
+
+@media all and (min-width: 62em) {
+  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.3px;
+    font-kerning: normal;
+  }
+}
+
+@media all and (min-width: 123.75em) {
+  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
+    font-size: 17px;
+    line-height: 25.5px;
+    letter-spacing: 0.51px;
+    font-kerning: normal;
+  }
+}
+
+section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
+  text-align: center;
+  margin: 3%;
+  color: #059DDF;
+}
+
+@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
+  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
+    font-size: 11.2px;
+    line-height: 22.5px;
+    letter-spacing: 0.12px;
+    font-kerning: normal;
+  }
+}
+
+@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
+  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
+    font-size: 11.2px;
+    line-height: 22.5px;
+    letter-spacing: 0.12px;
+    font-kerning: normal;
+  }
+}
+
+@media all and (min-width: 62em) {
+  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
+    font-size: 11.2px;
+    line-height: 22.5px;
+    letter-spacing: 0.12px;
+    font-kerning: normal;
+  }
+}
+
+@media all and (min-width: 123.75em) {
+  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.18px;
+    font-kerning: normal;
+  }
+}
+
+section#founders_perdoo #founders__container .founders__col1 img, section#founders_perdoo #founders__container .founders__col2 img {
+  border-radius: 50%;
+  margin-bottom: 1.5%;
+  width: 40%;
+  max-width: 40%;
+  height: auto;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------- */
 section#price_header {
   background-color: #059DDF;
@@ -5033,10 +5115,6 @@ section#price_header #price_header__container * {
 
 section#price_header #price_header__container h5 {
   opacity: .6;
-}
-
-section#price #price__container {
-  padding: 0;
 }
 
 section#price #price__container h2 {
@@ -5079,7 +5157,21 @@ section#price #price__container h2 {
   }
 }
 
+@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
+  section#price #price__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    align-content: space-between;
+  }
+  section#price #price__container:before, section#price #price__container:after {
+    content: none;
+  }
+}
+
 section#price #price__container #price__col1 {
+  order: 2;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -5089,14 +5181,14 @@ section#price #price__container #price__col1 #price__calculator form {
 }
 
 section#price #price__container #price__col1 #price__calculator form input {
+  font-weight: bold;
+  font-weight: 600;
   width: 100px;
   height: 50px;
   border-radius: 5px;
   border: 2px solid #EBEBEB;
   margin-right: 4px;
   padding: 10px;
-  font-weight: bold;
-  font-weight: 600;
   color: #059DDF;
   letter-spacing: -1px !important;
 }
@@ -5145,10 +5237,6 @@ section#price #price__container #price__col1 #price__calculator form label {
 
 section#price #price__container #price__col1 #price__calculator p {
   color: #c3c3c3;
-}
-
-section#price #price__container #price__col1 #price__calculator #price__calculator-container {
-  width: 90%;
 }
 
 section#price #price__container #price__col1 #price__calculator #price__calculator-container #price__calculator-slider {
@@ -5277,10 +5365,17 @@ section#price #price__container #price__col1 #price__soon * {
 }
 
 section#price #price__container #price__col2 {
+  order: 1;
   margin-top: 25px;
   border: 1px solid #c3c3c3;
   border-radius: 10px;
   padding: 0;
+}
+
+@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
+  section#price #price__container #price__col2 * {
+    text-align: center;
+  }
 }
 
 section#price #price__container #price__col2 #price__col2_title {
@@ -5460,125 +5555,6 @@ section#price #price__container #price__col2 #price__col2_start .button {
   border-radius: 40px;
   font-weight: bold;
   font-weight: 600;
-}
-
-/* ---------------------------------------------------------------------------------------------------------------- */
-@media (orientation: landscape) {
-  section#founders_perdoo {
-    padding-top: 12%;
-  }
-}
-
-@media (orientation: portrait) {
-  section#founders_perdoo {
-    padding-top: 6%;
-  }
-}
-
-section#founders_perdoo #founders__container {
-  margin-bottom: 3%;
-  text-align: center;
-}
-
-section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
-  align-content: center;
-  line-height: 27px !important;
-  text-align: left;
-  padding: 3%;
-}
-
-section#founders_perdoo #founders__container .founders__col1:before, section#founders_perdoo #founders__container .founders__col1:after, section#founders_perdoo #founders__container .founders__col2:before, section#founders_perdoo #founders__container .founders__col2:after {
-  content: none;
-}
-
-@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
-  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
-    font-size: 15px;
-    line-height: 22.5px;
-    letter-spacing: 0.3px;
-    font-kerning: normal;
-  }
-}
-
-@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
-  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
-    font-size: 15px;
-    line-height: 22.5px;
-    letter-spacing: 0.3px;
-    font-kerning: normal;
-  }
-}
-
-@media all and (min-width: 62em) {
-  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
-    font-size: 15px;
-    line-height: 22.5px;
-    letter-spacing: 0.3px;
-    font-kerning: normal;
-  }
-}
-
-@media all and (min-width: 123.75em) {
-  section#founders_perdoo #founders__container .founders__col1, section#founders_perdoo #founders__container .founders__col2 {
-    font-size: 17px;
-    line-height: 25.5px;
-    letter-spacing: 0.51px;
-    font-kerning: normal;
-  }
-}
-
-section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
-  text-align: center;
-  margin: 3%;
-  color: #059DDF;
-}
-
-@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
-  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
-    font-size: 11.2px;
-    line-height: 22.5px;
-    letter-spacing: 0.12px;
-    font-kerning: normal;
-  }
-}
-
-@media all and (min-width: 0.0625em) and (max-width: 61.875em) {
-  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
-    font-size: 11.2px;
-    line-height: 22.5px;
-    letter-spacing: 0.12px;
-    font-kerning: normal;
-  }
-}
-
-@media all and (min-width: 62em) {
-  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
-    font-size: 11.2px;
-    line-height: 22.5px;
-    letter-spacing: 0.12px;
-    font-kerning: normal;
-  }
-}
-
-@media all and (min-width: 123.75em) {
-  section#founders_perdoo #founders__container .founders__col1 .founders__name, section#founders_perdoo #founders__container .founders__col2 .founders__name {
-    font-size: 15px;
-    line-height: 22.5px;
-    letter-spacing: 0.18px;
-    font-kerning: normal;
-  }
-}
-
-section#founders_perdoo #founders__container .founders__col1 img, section#founders_perdoo #founders__container .founders__col2 img {
-  border-radius: 50%;
-  margin-bottom: 1.5%;
-  width: 40%;
-  max-width: 40%;
-  height: auto;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */

@@ -27,7 +27,7 @@
             </svg>
         </a>
     </div>
-    <div id="header-navigation" aria-expanded="true">
+    <div id="header-navigation">
         <ul>
             <li><a href="price.html">Pricing</a></li>
             <li><a href="about.html">About</a></li>
@@ -54,6 +54,7 @@
     <section id="price">
         <div id="price__container">
             <div id="price__col1">
+                <!-- slider -->
                 <div id="price__calculator">
                     <h2>How many people work in your company?</h2>
                     <form>
@@ -61,15 +62,16 @@
                         <label for="employee_count">people</label>
                     </form>
                     <p>The more people you have in your company, the less you have to pay.<br>Also consider the 10% discount with yearly payment</p>
-                    <div id="price__calculator-container">
+                    <div id="price__calculator-container"> <!-- here comes the slider -->
                         <div id="price__calculator-slider" class="dragdealer">
-                            <div id="price__calculator-slider-button" class="handle"></div>
+                            <div id="price__calculator-slider-button" class="handle"></div> <!-- this supposed to be the slider button -->
                         </div>
                         <p id="price__calulcator-min-max">
                             <span id="price__calulcator-min">2</span><span id="price__calulcator-max">50.000</span>
                         </p>
                     </div>
                 </div>
+                <!-- textings --> 
                 <div id="price__available">
                     <img src="images/icon-available.svg">
                     <div>
@@ -95,8 +97,8 @@
                     </div>
                 </div>
             </div>
-            
             <div id="price__col2">
+                <!-- price indicator -->
                 <div id="price__col2_title">
                     <h2>Perdoo license</h2>
                     <p>60.000 people, monthly payment</p>
@@ -104,15 +106,16 @@
                 <div id="price__col2_indicator">
                     <p>Your price per user</p>
                     <p id="price__col2_price">&euro; 4.50<span>/ &euro; 2.345</span></p>
-                    
+                    <!-- switch button -->
                     <div id="price__switch_container">
                         <span id="price__switch_monthly">Monthly</span>
                         <div id="price__switch">
+                            <!-- switch classes: "annual" or "monthly" -->
                             <div id="price__switch_button" class="annual"></div>
                         </div>
+                        <!-- and add "selected" class to the selected option -->
                         <span id="price__switch_annual" class="selected">Annual (Save 10%)</span>
                     </div>
-                    
                 </div>
                 <div id="price__col2_start">
                     <p>Start the first of 30 days of free trial right now</p>
@@ -144,7 +147,7 @@
             </div>
             <div id="footer-row1__column2">
                 <a href="terms.html">Terms of Service</a>
-                <a href="#">Pricing</a>
+                <a href="price.html">Pricing</a>
             </div>
             <div id="footer-row1__column3">
                 <a href="#">Login</a>
@@ -178,26 +181,7 @@
     <![endif]-->
 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragdealer/0.9.8/dragdealer.min.js"></script>
-    <script>
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 150) {
-            $("#header").removeClass("header-bright");
-        } else {
-            $("#header").addClass("header-bright");
-    //        $("#header").css({"background-color":"rgba(255, 255, 255, .9)"})
-        }
-    });
-    $(function() {
-        new Dragdealer('just-a-slider', {
-            animationCallback: function(x, y) {
-                $('#price__calculator-slider .value').text(Math.round(x * 100));
-            }
-        });
-    });
-    </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    <script src="scripts/custom.js"></script>
 </body>
 
 </html>

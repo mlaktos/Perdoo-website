@@ -1,28 +1,28 @@
 // Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+@import "../_imports/bootstrap/variables";
+@import "../_imports/bootstrap/mixins";
 
 // Reset and dependencies
-@import "bootstrap/normalize";
+@import "../_imports/bootstrap/normalize";
 //@import "bootstrap/print";
 //@import "bootstrap/glyphicons";
 
 // Core CSS
-@import "bootstrap/scaffolding";
+@import "../_imports/bootstrap/scaffolding";
 //@import "bootstrap/type";
 //@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
+@import "../_imports/bootstrap/grid";
+@import "../_imports/bootstrap/tables";
+@import "../_imports/bootstrap/forms";
 //@import "bootstrap/buttons";
 
 // Components
-@import "bootstrap/component-animations";
+@import "../_imports/bootstrap/component-animations";
 //@import "bootstrap/dropdowns";
 //@import "bootstrap/button-groups";
 //@import "bootstrap/input-groups";
-@import "bootstrap/navs";
-@import "bootstrap/navbar";
+@import "../_imports/bootstrap/navs";
+@import "../_imports/bootstrap/navbar";
 //@import "bootstrap/breadcrumbs";
 //@import "bootstrap/pagination";
 //@import "bootstrap/pager";
@@ -40,26 +40,20 @@
 //@import "bootstrap/close";
 
 // Components w/ JavaScript
-@import "bootstrap/modals";
-@import "bootstrap/tooltip";
-@import "bootstrap/popovers";
-@import "bootstrap/carousel";
+@import "../_imports/bootstrap/modals";
+@import "../_imports/bootstrap/tooltip";
+@import "../_imports/bootstrap/popovers";
+@import "../_imports/bootstrap/carousel";
 
 // Utility classes
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
+@import "../_imports/bootstrap/utilities";
+@import "../_imports/bootstrap/responsive-utilities";
 
-@import '../../bower_components/modular-scale/stylesheets/modular-scale';
+@import '../_imports/modular-scale/stylesheets/modular-scale';
+@import '../_imports/_mappy-breakpoints';
+
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-@import '_mappy-breakpoints';
-
-//$fa-font-path: "../bower_components/components-font-awesome/fonts";
-// bower:scss
-//$enable-flex: true;
-//@import "bower_components/bootstrap/scss/bootstrap.scss";
-//@import "bower_components/components-font-awesome/scss/font-awesome.scss";
-// endbower
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 // BASIC VARIABLES, PROJECT SETUP
@@ -84,36 +78,6 @@ $global-spacing: 6%;
 $line-height: 2px;
 $ms-base: 12px;
 $ms-ratio: $major-second; 
-//$ms-range:
-//  1.1   20em,
-//  1.333 60em;
-//$base-size: 14px 30px;
-//$ratio: $golden;
-
-
-/* ---------------------------------------------------------------------------------------------------------------- */
-// FUNCTIONs
-
-@function str-replace($string, $search, $replace: '') {
-    $index: str-index($string, $search);
-
-    @if $index {
-        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-    }
-
-    @return $string;
-}
-
-@function svg-fill ($svg, $color) {
-  @return str-replace($svg, '<svg', '<svg fill="#{$color}"');
-}
-
-@function svg-size ($svg, $width, $height) {
-  $svg: str-replace($svg, '<svg', '<svg width="#{$width}"');
-  $svg: str-replace($svg, '<svg', '<svg height="#{$height}"');
-  
-  @return $svg;
-}
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 // SVGs
@@ -316,10 +280,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
 * {
     transition: all .3s ease;
     color: $perdoo-text-color;
-}
-
-a:hover {
-    text-decoration: none;
+    
+    a:link, a:hover, a:visited, a:active {
+        text-decoration: none;
+    }
 }
 
 html, body {
@@ -385,16 +349,16 @@ h6 {
 
 .button-outline-blue {
     background: none;
-    border: $line-height solid $perdoo-blue;
+    border: $line-height solid $perdoo-blue !important;
 }
 
 .button-outline-white {
     background: none;
-    border: $line-height solid white !important;
+    border: $line-height solid white;
 }
 .button-outline-grey {
     background: none;
-    border: $line-height solid $perdoo-medium-grey !important;
+    border: $line-height solid $perdoo-medium-grey;
 }
 
 .button-fill-white {
@@ -462,7 +426,6 @@ header {
                 li {
                     a {
                         color: $perdoo-blue;
-                        
                         &:hover {
                             color: darken($perdoo-blue, 20%);
                         }
@@ -513,6 +476,11 @@ header {
                     }
                 }
             }
+        }
+    }
+    @include media-range(mobile, mobile) {
+        .button {
+            @extend .button-outline-blue;
         }
     }
 }
@@ -578,7 +546,7 @@ section#customer_quotes {
         @include media-range(mobile, tablet) {
             flex-wrap:wrap;
         }
-        margin-top: $global-spacing;
+        margin-top: 40px;
         
         .customer_quotes__customer-box {
             @extend .col-md-4;
@@ -619,7 +587,6 @@ section#customer_quotes {
                 }
                 
                 .customer_quotes__title {
-//                    @extend .perdoo-title;
                     @include font-size-media(.8);
                     color: lighten($perdoo-medium-grey, 30%);
                     margin-bottom: 5px;
@@ -641,7 +608,7 @@ section#customer_quotes {
         }
     }
     #customer_quotes__quotes {
-    margin-top: $global-spacing / 2;
+        margin-top: $global-spacing / 2;
         @extend .col-md-10;
         @extend .col-md-offset-1; 
         
@@ -656,77 +623,6 @@ section#customer_quotes {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
-
-//section#need_perdoo {
-//    padding-top: $global-spacing;
-//    padding-bottom: $global-spacing;
-//    @extend .container-fluid;
-//    margin-left: 1em;
-//    margin-right: 1em;
-//    
-//    border-radius: 2em;
-//    background-color: $perdoo-lightest-grey;
-//    
-//    #neeed_perdoo__container {
-//        @extend .container;
-//        @include create-flexbox(space-between, space-between, false, column);
-//        * {
-//            text-align: center;
-//            margin-bottom: 1em;
-//            &:last-child {
-//                margin-bottom: 0;
-//            }
-//        }
-//        #need_perdoo__icons {
-//            padding: 0;
-//            margin-top: $global-spacing;
-//            @extend .col-sm-10;
-//            @extend .col-sm-offset-1; 
-//            @include create-flexbox(space-between, flex-start);
-//            
-//            hr {
-//                width: $line-height;
-//                height: 100px;
-//                background-color: $perdoo-light-grey;
-//                margin-top: 0;
-//            }
-//
-//            .need_perdoo__icon_column {
-//                @include create-flexbox(space-between, space-between, false, column);
-//                height: 100px;
-//
-//                p {
-//                    text-transform: uppercase;
-//                    @include font-weight(semibold);
-//                    @include media-range(mobile, mobile) {
-//                        @include font-size-media(.7);
-//                    }
-//                }
-//                
-//                img {
-//                    transform: scale(2);
-//                    @include media-range(mobile, mobile) {
-//                        transform: scale(1);
-//                    }
-//                }
-//            }
-//        }
-//    }
-//    
-//    #need_perdoo__text {
-//        padding: 0;
-//        margin-top: $global-spacing / 2;
-//        @extend .col-md-10;
-//        @extend .col-md-offset-1;
-//        
-//        h4 {
-//            strong {
-//                color: $perdoo-blue;
-//                @include font-weight(semibold);
-//            }  
-//        }
-//    }
-//}
 
 section#need_perdoo {
     padding-top: $global-spacing;
@@ -817,43 +713,23 @@ section#what_is {
     margin-top: $global-spacing;
     padding-bottom: $global-spacing;
     @extend .container-fluid;
-    position: relative;
     
     #what_is__image {
-        @include create-flexbox(flex-end, center);
-        position: absolute;
-        overflow: hidden;
-        min-width: 50vw;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        
+        @extend .col-md-6;
         img {
-            max-width: 50vw;
-        }
-            
+            max-width: 95%;
+        }   
         @include media-range(mobile, tablet) {
-            position: inherit;
-            justify-content: center;
-            order: 2;
-                
             img {
-                max-width: 80vw;
-                display: none;
+                max-width: 100%;
             }
         }
     }    
     #what_is__container {
         @extend .container;
-//        @include create-flexbox();
-        
-        @include media-range(mobile, tablet) {
-            flex-direction: column;
-        }
         
         #what_is__text {
-            @extend .col-md-5;
-            @extend .col-md-offset-7;
+            @extend .col-md-6;
             
             h6 {
                 text-transform: uppercase;
@@ -862,7 +738,7 @@ section#what_is {
                 @include font-weight(semibold);
                 
                 margin-top: 2em;
-                background: url(svg-checkmark-fill());
+                background: url(svg-checkmark-fill($perdoo-green));
                 background-repeat: no-repeat;
                 padding-left: 30px;
                 height: 30px;
@@ -880,78 +756,13 @@ section#what_is {
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 
-section#impressum {
-    @include portrait-landscape-spacing(padding-top, 10vh)
-    @extend .container-fluid;
-    @include portrait-landscape-spacing(height, 60vh)
-    
-    #impressum__container {
-        @extend .container;
-        
-        h1 {
-            text-align: center;
-            margin-bottom: $global-spacing;
-        }
-        
-        .impressum__col1 {
-            @extend .col-md-2;
-            @extend .col-md-offset-1;
-        }
-        .impressum__col2 {
-            @extend .col-md-8;
-            @extend .col-md-offset-1;
-        }
-        
-    }
-}
-
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-section#terms {
-    @include portrait-landscape-spacing(padding-top, 10vh)
-    @extend .container-fluid;
-    
-    #terms__container {
-        @extend .container;
-        
-        h1 {
-            text-align: center;
-            margin-bottom: $global-spacing;
-        }
-        
-        div {
-            @extend .col-md-10;
-            @extend .col-md-offset-1;
-            padding-bottom: $global-spacing;
-            
-            h1, h2, h3, h4, h5, h6 {
-                margin-top: 1em;
-            }
-            p {
-                margin-top: .5em;
-            }
-            h3 {
-                @include font-size-media(2);
-            }
-            ul {
-                padding-left: 1.5em;
-            }
-        }
-        
-    }
-}
-
-/* ---------------------------------------------------------------------------------------------------------------- */
-
 section#ready {
     margin-top: $global-spacing;
     @extend .container-fluid;
     @include create-flexbox(center, center, false, column);
     background-color: $perdoo-blue;
-    padding-top: $global-spacing / 2;
-    padding-bottom: $global-spacing / 2;
-    
-    
+    padding-top: $global-spacing;
+    padding-bottom: $global-spacing;
     background-image: url(svg-rocket-icon-fill(mix(white, $perdoo-blue, 10%)));
     background-repeat: no-repeat;
     background-position: center center;
@@ -998,10 +809,74 @@ section#ready {
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 
+section#impressum {
+    @include portrait-landscape-spacing(padding-top, 10vh)
+    @extend .container-fluid;
+    @include portrait-landscape-spacing(height, 60vh)
+    
+    #impressum__container {
+        @extend .container;
+        
+        h1 {
+            text-align: center;
+            margin-bottom: $global-spacing;
+        }
+        
+        .impressum__col1 {
+            @extend .col-md-2;
+            @extend .col-md-offset-1;
+        }
+        .impressum__col2 {
+            @extend .col-md-8;
+            @extend .col-md-offset-1;
+        }
+        .impressum__col1, .impressum__col2 {
+            @include line-height-calculate(8);  
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+section#terms {
+    @include portrait-landscape-spacing(padding-top, 10vh)
+    @extend .container-fluid;
+    
+    #terms__container {
+        @extend .container;
+        
+        h1 {
+            text-align: center;
+            margin-bottom: $global-spacing;
+        }
+        
+        div {
+            @extend .col-md-10;
+            @extend .col-md-offset-1;
+            padding-bottom: $global-spacing;
+            
+            h1, h2, h3, h4, h5, h6 {
+                margin-top: 1em;
+            }
+            p {
+                margin-top: .5em;
+            }
+            h3 {
+                @include font-size-media(2);
+            }
+            ul {
+                padding-left: 1.5em;
+            }
+        }
+        
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
 section#about_perdoo {
     @extend .container-fluid;
     background-color: $perdoo-blue;
-//    @include portrait-landscape-spacing(padding-top, 100px)
     padding-top: 100px;
     padding-bottom: 3em;
     
@@ -1036,12 +911,47 @@ section#about_perdoo {
     }
 }
 
+section#founders_perdoo {
+    @extend .container-fluid;
+    margin-top: 3em;
+    
+    #founders__container {
+        @extend .container;
+        margin-bottom: $global-spacing / 2;
+        text-align: center;
+        
+        .founders__col1, .founders__col2 {
+            @extend .col-md-6;
+            @include create-flexbox(baseline, center, false, column);
+            @include font-size-media(2);
+            @include line-height-calculate(6);
+            text-align: left;
+            padding: $global-spacing / 2;
+            
+            .founders__name {
+                text-align: center;
+                margin: $global-spacing / 2;
+                @extend .perdoo-title;
+                @include font-size-media(.8);
+                color: $perdoo-blue;
+            }
+            
+            img {
+                border-radius: 50%;
+                margin-bottom: $global-spacing / 4;
+                width: 40%;
+                max-width: 40%;
+                height: auto;
+            }
+        }
+    }
+}
+
 /* ---------------------------------------------------------------------------------------------------------------- */
 
 section#price_header {
     @extend .container-fluid;
     background-color: $perdoo-blue;
-//    @include portrait-landscape-spacing(padding-top, 100px)
     padding-top: 100px;
     padding-bottom: 3em;
     
@@ -1068,15 +978,19 @@ section#price {
     
     #price__container {
         @extend .container; 
-        padding: 0;
         
         h2 {
             text-transform: uppercase; 
             @include font-size-media(4);
         }
         
+        @include media-range(mobile, tablet) {
+            @include create-flexbox(space-between, space-between, false, column);
+        }
+        
         #price__col1 {
             @extend .col-md-8; 
+            order: 2;
             margin-top: 40px; 
             margin-bottom: 40px;
             
@@ -1084,14 +998,14 @@ section#price {
                 form {
                     margin-top: 20px;
                     input {
+                        @include font-size-media(6);
+                        @include font-weight(semibold);
                         width: 100px;
                         height: 50px;
                         border-radius: 5px;
                         border: $line-height solid $perdoo-light-grey;
                         margin-right: 4px;
                         padding: 10px;
-                        @include font-size-media(6);
-                        @include font-weight(semibold);
                         color: $perdoo-blue;
                         letter-spacing: -1px !important;
                     }
@@ -1104,9 +1018,7 @@ section#price {
                     color: lighten($perdoo-medium-grey, 30%);
                 }
                 #price__calculator-container {
-                    width: 90%;
                     #price__calculator-slider {
-//                        border-bottom: 5px solid transparent;
                         background-image: url(svg-dashed-rounded-line());
                         background-position: right 15px;
                         background-repeat: repeat-x;
@@ -1138,6 +1050,7 @@ section#price {
                     }
                 }
             }
+            
             #price__available, #price__soon {
                 margin-top: 40px;
                 img {
@@ -1180,10 +1093,17 @@ section#price {
         
         #price__col2 {
             @extend .col-md-4;
+            order: 1;
             margin-top: 25px;
             border: 1px solid lighten($perdoo-medium-grey, 30%);
             border-radius: 10px;
             padding: 0;
+            
+            @include media-range(mobile, tablet) {
+                * {
+                    text-align: center;
+                }
+            }
             
             #price__col2_title {
                 padding: 15px;
@@ -1266,49 +1186,10 @@ section#price {
                 
                 .button {
                     @extend .button-fill-blue;
+                    @extend .button-zoom-hover;
                     @include button-maker(20px);
                     @include font-weight(semibold);
-//                    @extend .button-medium;
-//                    @extend .button-zoom-hover;
                 }
-            }
-        }
-    }
-}
-
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-section#founders_perdoo {
-    @include portrait-landscape-spacing(padding-top, $global-spacing)
-    @extend .container-fluid;
-    
-    #founders__container {
-        @extend .container;
-        margin-bottom: $global-spacing / 2;
-        text-align: center;
-        
-        .founders__col1, .founders__col2 {
-            @extend .col-md-6;
-            @include create-flexbox(baseline, center, false, column);
-            @include font-size-media(2);
-            @include line-height-calculate(6);
-            text-align: left;
-            padding: $global-spacing / 2;
-            
-            .founders__name {
-                text-align: center;
-                margin: $global-spacing / 2;
-                @extend .perdoo-title;
-                @include font-size-media(.8);
-                color: $perdoo-blue;
-            }
-            
-            img {
-                border-radius: 50%;
-                margin-bottom: $global-spacing / 4;
-                width: 40%;
-                max-width: 40%;
-                height: auto;
             }
         }
     }
@@ -1464,8 +1345,7 @@ footer {
                 }
             }
         }
-    }
-       
+    }  
     
     section#footer-row2 {
         background-color: $perdoo-dark-grey;
