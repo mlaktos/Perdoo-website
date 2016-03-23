@@ -636,6 +636,7 @@ section#need_perdoo {
                 margin-bottom: 0;
             }
         }
+        
         #need_perdoo__icons {
             padding: 0;
             margin-top: $global-spacing;
@@ -650,9 +651,19 @@ section#need_perdoo {
                 margin-top: 0;
                 border: none;
             }
+            
+            @include media-range(mobile, mobile) {
+                @include create-flexbox(center, center, false, column);
+                
+                hr {
+                    width: 100%;
+                    height: $line-height;
+                }
+            }
 
             .need_perdoo__icon_column {
                 @include create-flexbox(flex-end, space-between, false, column);
+               
                 width: 50%;
                 height: 100px;
 
@@ -660,7 +671,7 @@ section#need_perdoo {
                     text-transform: uppercase;
                     @include font-weight(semibold);
                     @include media-range(mobile, mobile) {
-                        @include font-size-media(.7);
+                        @include font-size-media(3);
                     }
                 }
                 
